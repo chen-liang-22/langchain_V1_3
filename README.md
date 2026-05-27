@@ -11,7 +11,7 @@
 ## 安装依赖
 
 ```bash
-pip install langgraph langchain-core langchain-community langchain-openai langchain-deepseek langchain-anthropic langchain-ollama langchain-qdrant langchain-text-splitters python-dotenv sqlalchemy pymysql pydantic qdrant-client streamlit loguru ddgs pypdf
+pip install langgraph langchain-core langchain-community langchain-openai langchain-deepseek langchain-anthropic langchain-ollama langchain-qdrant langchain-text-splitters python-dotenv sqlalchemy pymysql pydantic qdrant-client streamlit loguru ddgs pypdf dashscope
 ```
 
 ## 中间件部署
