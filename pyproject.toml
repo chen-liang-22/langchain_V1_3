@@ -1,0 +1,30 @@
+[project]
+name = "agent"
+version = "0.0.1"
+description = "Starter template for making a new agent LangGraph."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "William Fu-Hinthorn", email = "13333726+hinthornw@users.noreply.github.com" }
+]
+
+# 项目的核心依赖包
+dependencies = [
+    "langgraph>=1.0.0",          # LangGraph 核心库
+    "python-dotenv>=1.0.1",       # 用于读取本地 .env 配置文件（管理 API Key）
+]
+
+# 允许以可编辑模式（editable mode）安装项目
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["langgraph.templates.agent", "agent"]
+[tool.setuptools.package-dir]
+"langgraph.templates.agent" = "src/agent"
+"agent" = "src/agent"
+
+
+

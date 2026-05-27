@@ -1,0 +1,3103 @@
+20260522 14:13:57 - MainProcess | MainThread | log_utils.<module>:54 - DEBUG - This is a debug message.
+20260522 14:13:57 - MainProcess | MainThread | log_utils.<module>:55 - INFO - This is an info message.
+20260522 14:13:57 - MainProcess | MainThread | log_utils.<module>:56 - WARNING - 这是一个警告
+20260522 14:27:07 - MainProcess | MainThread | db_utils.<module>:56 - INFO - 数据库中的表名: ['ai_conversation_record', 'ai_report_conversation', 'ai_simulation_training', 'ai_simulation_training_history', 'ai_simulation_training_scope_dept', 'ai_simulation_training_scope_user', 'ai_simulation_training_session', 'ai_simulation_training_share_dept', 'ai_simulation_training_share_user', 'ai_simulation_training_user', 'ai_simulation_training_user_history', 'ai_training_report', 'beisen_event_callback_record', 'beisen_raw_employee', 'beisen_raw_job_post', 'beisen_raw_organization', 'exam_badge', 'exam_info', 'exam_log', 'exam_log_ai_review', 'exam_log_record', 'exam_manual_grading', 'exam_marking_fail_log', 'exam_paper', 'exam_paper_json', 'exam_paper_json_bak_250729', 'exam_paper_random_count', 'exam_paper_random_count_bak_250729', 'exam_paper_share_dept', 'exam_paper_share_user', 'exam_paper_snapshot', 'flow_category', 'flow_definition', 'flow_his_task', 'flow_instance', 'flow_node', 'flow_skip', 'flow_task', 'flow_user', 'gen_table', 'gen_table_column', 'question_bank_dept', 'question_bank_info', 'question_bank_share_dept', 'question_bank_share_user', 'question_info', 'question_ref_index', 'question_ref_sync_state', 'report_record', 'report_record_recipient', 'report_rules', 'report_rules_dept', 'report_rules_user', 'report_template', 'report_template_title', 'sop_info', 'sop_info_dept', 'sop_info_task', 'sop_info_user', 'sop_manage', 'sop_task', 'sop_task_push_records', 'sop_work_report_info', 'sop_work_report_item_info', 'sop_work_report_person_relevancy', 'study_simulation_record', 'study_task', 'study_task_ref_course', 'study_task_scope_dept', 'study_task_scope_user', 'study_task_stage_ref_course', 'study_task_stage_user_instance', 'study_task_user', 'study_task_user_round', 'sys_client', 'sys_config', 'sys_course', 'sys_course_dept', 'sys_course_section', 'sys_course_share_dept', 'sys_course_share_user', 'sys_course_stage', 'sys_course_stage_process', 'sys_course_stage_process_reviewer', 'sys_course_stage_user_instance', 'sys_courseware', 'sys_courseware_category', 'sys_courseware_library', 'sys_courseware_library_copy', 'sys_courseware_library_share_dept', 'sys_courseware_library_share_user', 'sys_dept', 'sys_dict_data', 'sys_dict_data_lang', 'sys_dict_type', 'sys_dict_type_lang', 'sys_exam_dept', 'sys_homework', 'sys_homework_record', 'sys_lang', 'sys_logininfor', 'sys_menu', 'sys_menu_lang', 'sys_message_notification', 'sys_message_record', 'sys_message_template', 'sys_notice', 'sys_notice_user_status', 'sys_oper_log', 'sys_oss', 'sys_oss_config', 'sys_post', 'sys_role', 'sys_role_dept', 'sys_role_menu', 'sys_scene_task', 'sys_social', 'sys_tenant', 'sys_tenant_package', 'sys_user', 'sys_user_badge', 'sys_user_course', 'sys_user_course_section', 'sys_user_courseware', 'sys_user_exam', 'sys_user_exam_ai', 'sys_user_exam_bak_20260427', 'sys_user_operation_log', 'sys_user_post', 'sys_user_role', 'sys_video_file_mapping', 'sys_vod_callback_log', 'sys_vod_video', 'task_study', 'task_study_list', 'task_study_list_course', 'task_work', 'task_work_children', 'task_work_children_user', 'task_work_dept', 'test_demo', 'test_leave', 'test_tree']
+20260522 14:41:41 - MainProcess | MainThread | db_utils.<module>:224 - INFO - 数据库中的表名: ['ai_conversation_record', 'ai_report_conversation', 'ai_simulation_training', 'ai_simulation_training_history', 'ai_simulation_training_scope_dept', 'ai_simulation_training_scope_user', 'ai_simulation_training_session', 'ai_simulation_training_share_dept', 'ai_simulation_training_share_user', 'ai_simulation_training_user', 'ai_simulation_training_user_history', 'ai_training_report', 'beisen_event_callback_record', 'beisen_raw_employee', 'beisen_raw_job_post', 'beisen_raw_organization', 'exam_badge', 'exam_info', 'exam_log', 'exam_log_ai_review', 'exam_log_record', 'exam_manual_grading', 'exam_marking_fail_log', 'exam_paper', 'exam_paper_json', 'exam_paper_json_bak_250729', 'exam_paper_random_count', 'exam_paper_random_count_bak_250729', 'exam_paper_share_dept', 'exam_paper_share_user', 'exam_paper_snapshot', 'flow_category', 'flow_definition', 'flow_his_task', 'flow_instance', 'flow_node', 'flow_skip', 'flow_task', 'flow_user', 'gen_table', 'gen_table_column', 'question_bank_dept', 'question_bank_info', 'question_bank_share_dept', 'question_bank_share_user', 'question_info', 'question_ref_index', 'question_ref_sync_state', 'report_record', 'report_record_recipient', 'report_rules', 'report_rules_dept', 'report_rules_user', 'report_template', 'report_template_title', 'sop_info', 'sop_info_dept', 'sop_info_task', 'sop_info_user', 'sop_manage', 'sop_task', 'sop_task_push_records', 'sop_work_report_info', 'sop_work_report_item_info', 'sop_work_report_person_relevancy', 'study_simulation_record', 'study_task', 'study_task_ref_course', 'study_task_scope_dept', 'study_task_scope_user', 'study_task_stage_ref_course', 'study_task_stage_user_instance', 'study_task_user', 'study_task_user_round', 'sys_client', 'sys_config', 'sys_course', 'sys_course_dept', 'sys_course_section', 'sys_course_share_dept', 'sys_course_share_user', 'sys_course_stage', 'sys_course_stage_process', 'sys_course_stage_process_reviewer', 'sys_course_stage_user_instance', 'sys_courseware', 'sys_courseware_category', 'sys_courseware_library', 'sys_courseware_library_copy', 'sys_courseware_library_share_dept', 'sys_courseware_library_share_user', 'sys_dept', 'sys_dict_data', 'sys_dict_data_lang', 'sys_dict_type', 'sys_dict_type_lang', 'sys_exam_dept', 'sys_homework', 'sys_homework_record', 'sys_lang', 'sys_logininfor', 'sys_menu', 'sys_menu_lang', 'sys_message_notification', 'sys_message_record', 'sys_message_template', 'sys_notice', 'sys_notice_user_status', 'sys_oper_log', 'sys_oss', 'sys_oss_config', 'sys_post', 'sys_role', 'sys_role_dept', 'sys_role_menu', 'sys_scene_task', 'sys_social', 'sys_tenant', 'sys_tenant_package', 'sys_user', 'sys_user_badge', 'sys_user_course', 'sys_user_course_section', 'sys_user_courseware', 'sys_user_exam', 'sys_user_exam_ai', 'sys_user_exam_bak_20260427', 'sys_user_operation_log', 'sys_user_post', 'sys_user_role', 'sys_video_file_mapping', 'sys_vod_callback_log', 'sys_vod_video', 'task_study', 'task_study_list', 'task_study_list_course', 'task_work', 'task_work_children', 'task_work_children_user', 'task_work_dept', 'test_demo', 'test_leave', 'test_tree']
+20260522 14:41:41 - MainProcess | MainThread | db_utils.<module>:228 - INFO - 数据库表信息: [{'table_name': 'ai_conversation_record', 'table_comment': 'AI对话记录表'}, {'table_name': 'ai_report_conversation', 'table_comment': 'AI报告对话快照表'}, {'table_name': 'ai_simulation_training', 'table_comment': 'AI模拟对话训练主表'}, {'table_name': 'ai_simulation_training_history', 'table_comment': 'AI模拟对话训练变更历史表'}, {'table_name': 'ai_simulation_training_scope_dept', 'table_comment': 'AI模拟对话训练适用部门表'}, {'table_name': 'ai_simulation_training_scope_user', 'table_comment': 'AI模拟对话训练适用人员表'}, {'table_name': 'ai_simulation_training_session', 'table_comment': 'AI模拟对话训练会话表'}, {'table_name': 'ai_simulation_training_share_dept', 'table_comment': 'AI模拟对话训练共享部门表'}, {'table_name': 'ai_simulation_training_share_user', 'table_comment': 'AI模拟对话训练共享人员表'}, {'table_name': 'ai_simulation_training_user', 'table_comment': 'AI模拟对话训练成员表'}, {'table_name': 'ai_simulation_training_user_history', 'table_comment': 'AI模拟对话训练成员快照历史表'}, {'table_name': 'ai_training_report', 'table_comment': 'AI训练报告表'}, {'table_name': 'beisen_event_callback_record', 'table_comment': '北森事件回调记录表'}, {'table_name': 'beisen_raw_employee', 'table_comment': '北森员工原始数据表'}, {'table_name': 'beisen_raw_job_post', 'table_comment': '岗位表'}, {'table_name': 'beisen_raw_organization', 'table_comment': '北森组织原始数据表'}, {'table_name': 'exam_badge', 'table_comment': '考试徽章'}, {'table_name': 'exam_info', 'table_comment': '考试'}, {'table_name': 'exam_log', 'table_comment': '考试记录'}, {'table_name': 'exam_log_ai_review', 'table_comment': 'AI评审考试记录结果'}, {'table_name': 'exam_log_record', 'table_comment': '考试记录'}, {'table_name': 'exam_manual_grading', 'table_comment': '考试_人工阅卷'}, {'table_name': 'exam_marking_fail_log', 'table_comment': '阅卷失败重试记录表'}, {'table_name': 'exam_paper', 'table_comment': '试卷'}, {'table_name': 'exam_paper_json', 'table_comment': '试卷JSON'}, {'table_name': 'exam_paper_json_bak_250729', 'table_comment': '试卷JSON'}, {'table_name': 'exam_paper_random_count', 'table_comment': '随机组卷试题数量'}, {'table_name': 'exam_paper_random_count_bak_250729', 'table_comment': '随机组卷试题数量'}, {'table_name': 'exam_paper_share_dept', 'table_comment': '试卷共享部门关联表'}, {'table_name': 'exam_paper_share_user', 'table_comment': '试卷共享人员关联表'}, {'table_name': 'exam_paper_snapshot', 'table_comment': '人工组卷考试-试卷快照'}, {'table_name': 'flow_category', 'table_comment': '流程分类'}, {'table_name': 'flow_definition', 'table_comment': '流程定义表'}, {'table_name': 'flow_his_task', 'table_comment': '历史任务记录表'}, {'table_name': 'flow_instance', 'table_comment': '流程实例表'}, {'table_name': 'flow_node', 'table_comment': '流程节点表'}, {'table_name': 'flow_skip', 'table_comment': '节点跳转关联表'}, {'table_name': 'flow_task', 'table_comment': '待办任务表'}, {'table_name': 'flow_user', 'table_comment': '流程用户表'}, {'table_name': 'gen_table', 'table_comment': '代码生成业务表'}, {'table_name': 'gen_table_column', 'table_comment': '代码生成业务表字段'}, {'table_name': 'question_bank_dept', 'table_comment': '题库关联部门'}, {'table_name': 'question_bank_info', 'table_comment': '题库管理表'}, {'table_name': 'question_bank_share_dept', 'table_comment': '题库共享部门表'}, {'table_name': 'question_bank_share_user', 'table_comment': '题库共享人员表'}, {'table_name': 'question_info', 'table_comment': '试题管理表'}, {'table_name': 'question_ref_index', 'table_comment': '题目引用索引'}, {'table_name': 'question_ref_sync_state', 'table_comment': '题目引用索引-历史补齐状态'}, {'table_name': 'report_record', 'table_comment': '周日报汇报记录'}, {'table_name': 'report_record_recipient', 'table_comment': '汇报记录发送到人'}, {'table_name': 'report_rules', 'table_comment': '周日报汇报规则'}, {'table_name': 'report_rules_dept', 'table_comment': '规则关联部门'}, {'table_name': 'report_rules_user', 'table_comment': '规则关联人员'}, {'table_name': 'report_template', 'table_comment': '部门周日报模板'}, {'table_name': 'report_template_title', 'table_comment': '周日报模板标题'}, {'table_name': 'sop_info', 'table_comment': '任务管理'}, {'table_name': 'sop_info_dept', 'table_comment': 'SOP与部门关联表'}, {'table_name': 'sop_info_task', 'table_comment': 'SOP与任务关联表'}, {'table_name': 'sop_info_user', 'table_comment': 'SOP与用户关联表'}, {'table_name': 'sop_manage', 'table_comment': 'sop管理'}, {'table_name': 'sop_task', 'table_comment': '任务表'}, {'table_name': 'sop_task_push_records', 'table_comment': 'SOP任务推送记录表'}, {'table_name': 'sop_work_report_info', 'table_comment': '工作报告信息表'}, {'table_name': 'sop_work_report_item_info', 'table_comment': '工作报告任务表'}, {'table_name': 'sop_work_report_person_relevancy', 'table_comment': '工作报告发送人关联表'}, {'table_name': 'study_simulation_record', 'table_comment': '场景模拟记录表'}, {'table_name': 'study_task', 'table_comment': '学习任务主表'}, {'table_name': 'study_task_ref_course', 'table_comment': '学习任务引用课程关系表'}, {'table_name': 'study_task_scope_dept', 'table_comment': '学习任务适用部门'}, {'table_name': 'study_task_scope_user', 'table_comment': '学习任务适用人员'}, {'table_name': 'study_task_stage_ref_course', 'table_comment': '学习任务阶段引用课程关系表'}, {'table_name': 'study_task_stage_user_instance', 'table_comment': '学习任务阶段实例表'}, {'table_name': 'study_task_user', 'table_comment': '学习任务成员表'}, {'table_name': 'study_task_user_round', 'table_comment': '学习任务轮次表'}, {'table_name': 'sys_client', 'table_comment': '系统授权表'}, {'table_name': 'sys_config', 'table_comment': '参数配置表'}, {'table_name': 'sys_course', 'table_comment': '课程表'}, {'table_name': 'sys_course_dept', 'table_comment': '课程部门表'}, {'table_name': 'sys_course_section', 'table_comment': '课程节数表'}, {'table_name': 'sys_course_share_dept', 'table_comment': '课程共享部门'}, {'table_name': 'sys_course_share_user', 'table_comment': '课程共享人员'}, {'table_name': 'sys_course_stage', 'table_comment': '课程阶段表'}, {'table_name': 'sys_course_stage_process', 'table_comment': '课程阶段过程关联表'}, {'table_name': 'sys_course_stage_process_reviewer', 'table_comment': '课程阶段过程指定复核人表'}, {'table_name': 'sys_course_stage_user_instance', 'table_comment': '用户课程阶段实例信息表'}, {'table_name': 'sys_courseware', 'table_comment': '课件表'}, {'table_name': 'sys_courseware_category', 'table_comment': '课件分类'}, {'table_name': 'sys_courseware_library', 'table_comment': '课件库表'}, {'table_name': 'sys_courseware_library_copy', 'table_comment': '课件库表'}, {'table_name': 'sys_courseware_library_share_dept', 'table_comment': '课件库共享部门'}, {'table_name': 'sys_courseware_library_share_user', 'table_comment': '课件库共享人员'}, {'table_name': 'sys_dept', 'table_comment': '部门表'}, {'table_name': 'sys_dict_data', 'table_comment': '字典数据表'}, {'table_name': 'sys_dict_data_lang', 'table_comment': '字典数据语言表'}, {'table_name': 'sys_dict_type', 'table_comment': '字典类型表'}, {'table_name': 'sys_dict_type_lang', 'table_comment': '字典类型语言表'}, {'table_name': 'sys_exam_dept', 'table_comment': '考试部门表'}, {'table_name': 'sys_homework', 'table_comment': '作业表'}, {'table_name': 'sys_homework_record', 'table_comment': '作业-交付记录表'}, {'table_name': 'sys_lang', 'table_comment': '语言表'}, {'table_name': 'sys_logininfor', 'table_comment': '系统访问记录'}, {'table_name': 'sys_menu', 'table_comment': '菜单权限表'}, {'table_name': 'sys_menu_lang', 'table_comment': '系统菜单-国际化表'}, {'table_name': 'sys_message_notification', 'table_comment': '消息通知表'}, {'table_name': 'sys_message_record', 'table_comment': '站内信通知记录'}, {'table_name': 'sys_message_template', 'table_comment': '站内信模板'}, {'table_name': 'sys_notice', 'table_comment': '通知公告表'}, {'table_name': 'sys_notice_user_status', 'table_comment': '用户公告状态'}, {'table_name': 'sys_oper_log', 'table_comment': '操作日志记录'}, {'table_name': 'sys_oss', 'table_comment': 'OSS对象存储表'}, {'table_name': 'sys_oss_config', 'table_comment': '对象存储配置表'}, {'table_name': 'sys_post', 'table_comment': '岗位信息表'}, {'table_name': 'sys_role', 'table_comment': '角色信息表'}, {'table_name': 'sys_role_dept', 'table_comment': '角色和部门关联表'}, {'table_name': 'sys_role_menu', 'table_comment': '角色和菜单关联表'}, {'table_name': 'sys_scene_task', 'table_comment': '场景任务表'}, {'table_name': 'sys_social', 'table_comment': '社会化关系表'}, {'table_name': 'sys_tenant', 'table_comment': '租户表'}, {'table_name': 'sys_tenant_package', 'table_comment': '租户套餐表'}, {'table_name': 'sys_user', 'table_comment': '用户信息表'}, {'table_name': 'sys_user_badge', 'table_comment': '用户徽章表'}, {'table_name': 'sys_user_course', 'table_comment': '用户关联课程'}, {'table_name': 'sys_user_course_section', 'table_comment': '用户关联课程章节表'}, {'table_name': 'sys_user_courseware', 'table_comment': '用户课件学习进度'}, {'table_name': 'sys_user_exam', 'table_comment': '用户关联考试'}, {'table_name': 'sys_user_exam_ai', 'table_comment': '课程节用户考试关联表'}, {'table_name': 'sys_user_exam_bak_20260427', 'table_comment': '用户关联考试'}, {'table_name': 'sys_user_operation_log', 'table_comment': '用户操作日志'}, {'table_name': 'sys_user_post', 'table_comment': '用户与岗位关联表'}, {'table_name': 'sys_user_role', 'table_comment': '用户和角色关联表'}, {'table_name': 'sys_video_file_mapping', 'table_comment': '视频-PPT时间轴映射表'}, {'table_name': 'sys_vod_callback_log', 'table_comment': 'VOD回调日志表'}, {'table_name': 'sys_vod_video', 'table_comment': '视频信息表'}, {'table_name': 'task_study', 'table_comment': '学习任务'}, {'table_name': 'task_study_list', 'table_comment': '学习任务列表'}, {'table_name': 'task_study_list_course', 'table_comment': '任务列表关联课程'}, {'table_name': 'task_work', 'table_comment': '工作任务'}, {'table_name': 'task_work_children', 'table_comment': '工作任务详情（子任务）'}, {'table_name': 'task_work_children_user', 'table_comment': '子任务关联成员'}, {'table_name': 'task_work_dept', 'table_comment': '工作任务归属部门'}, {'table_name': 'test_demo', 'table_comment': '测试单表'}, {'table_name': 'test_leave', 'table_comment': '请假申请表'}, {'table_name': 'test_tree', 'table_comment': '测试树表'}]
+20260522 14:42:33 - MainProcess | MainThread | db_utils.<module>:232 - INFO - 数据库表结构:
+表名: ai_conversation_record
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - session_id: BIGINT [注释: 会话ID]
+  - round_number: INTEGER [注释: 轮次编号（从1开始）]
+  - message_order: INTEGER [注释: 消息顺序（同轮次内递增）]
+  - message_type: TINYINT [注释: 消息类型（1:AI客户消息 2:用户消息）]
+  - message_content: TEXT COLLATE "utf8mb4_general_ci" [注释: 消息内容]
+  - message_time: DATETIME [注释: 消息发送时间]
+  - message_status: TINYINT [注释: 消息状态（0:待发送 1:已发送 2:发送失败）]
+  - ai_message_content: JSON [注释: AI消息全文]
+  - ai_analysis: JSON [注释: AI分析结果（JSON）]
+  - ai_analysis_time: DATETIME [注释: AI分析时间]
+  - ai_analysis_status: TINYINT [注释: AI分析状态（0:未分析 1:分析中 2:分析完成 3:分析失败）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0:未删除 1:已删除）]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_ai_conversation_record_round_order: ['session_id', 'round_number', 'message_order'] (普通索引)
+  - idx_ai_conversation_record_session_id: ['session_id', 'id'] (普通索引)
+  - idx_ai_conversation_record_tenant: ['tenant_id', 'del_flag'] (普通索引)
+
+表名: ai_report_conversation
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - report_id: BIGINT [注释: 报告ID]
+  - session_id: BIGINT [注释: 会话ID（冗余，便于查询）]
+  - round_number: INTEGER [注释: 轮次编号（从1开始）]
+  - message_order: INTEGER [注释: 消息顺序（同轮次内递增）]
+  - message_type: TINYINT [注释: 消息类型（1:AI客户消息 2:学员消息）]
+  - message_content: TEXT COLLATE "utf8mb4_general_ci" [注释: 消息内容]
+  - message_time: DATETIME [注释: 消息发送时间]
+  - ai_analysis: JSON [注释: AI分析结果（JSON）]
+  - ai_analysis_time: DATETIME [注释: AI分析时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0:未删除 1:已删除）]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_ai_report_conversation_report_id: ['report_id'] (普通索引)
+  - idx_ai_report_conversation_session_round: ['session_id', 'round_number', 'message_order'] (普通索引)
+  - idx_ai_report_conversation_tenant: ['tenant_id', 'del_flag'] (普通索引)
+
+表名: ai_simulation_training
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - training_name: VARCHAR(128) [注释: 任务名称]
+  - dept_id: BIGINT [注释: 所属部门ID（用于管理端数据权限控制）]
+  - instance_id: VARCHAR(64) [注释: 客户画像实例ID]
+  - training_type: TINYINT [注释: 训练类型 1管理员指定训练 2员工自建训练]
+  - student_tags: JSON [注释: 学员画像标签JSON数组]
+  - customer_tags: JSON [注释: 客户画像标签JSON数组]
+  - question_count: INTEGER [注释: 问答次数，-1表示不限]
+  - valid_days: INTEGER [注释: 任务周期（天数），-1表示不限]
+  - task_count: INTEGER [注释: 任务次数，-1表示不限]
+  - completion_standard: TINYINT [注释: 完成训练标准 1达到问答总数 2达到目标综合 3达到问答总数/目标综合]
+  - info_config_type: TINYINT [注释: 训练信息配置 1基于允许使用分析]
+  - is_shared: TINYINT [注释: 是否共享（0否 1是）]
+  - allow_expired_training: TINYINT [注释: 是否允许超期继续训练 0=不允许 1=允许]
+  - status: TINYINT [注释: 状态 0草稿 1启用 2停用]
+  - publish_time: DATETIME [注释: 发布时间]
+  - del_flag: CHAR(1) [注释: 删除标志 0未删除 1已删除]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - customer_instance_ai: TEXT [注释: 客户实例AI版]
+  - customer_instance_manual: TEXT [注释: 客户实例人工修改版]
+  - min_stage_code: VARCHAR(32) [注释: 最小可见阶段编码，对应字典 employee_stage.dict_value]
+  - stage: VARCHAR(255) [注释: 当前阶段]
+索引信息:
+  - idx_training_dept: ['dept_id', 'create_time'] (普通索引)
+  - idx_training_name: ['training_name'] (普通索引)
+  - idx_training_status: ['status', 'create_time'] (普通索引)
+  - idx_training_tenant: ['tenant_id', 'del_flag'] (普通索引)
+  - idx_training_type: ['training_type', 'status'] (普通索引)
+
+表名: ai_simulation_training_history
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户ID]
+  - training_id: BIGINT [注释: 训练ID]
+  - change_type: VARCHAR(20) [注释: 变更类型：INSERT=新增 UPDATE_BEFORE=修改前 UPDATE_AFTER=修改后 ENABLE=启用前 DISABLE=停用前]
+  - training_name: VARCHAR(200) [注释: 训练名称快照]
+  - dept_id: BIGINT [注释: 所属部门ID快照]
+  - training_type: TINYINT [注释: 训练类型快照]
+  - instance_id: VARCHAR(64) [注释: 客户画像实例ID快照]
+  - customer_instance_ai: TEXT [注释: 客户实例AI版快照]
+  - customer_instance_manual: TEXT [注释: 客户实例人工修改版快照]
+  - student_tags: JSON [注释: 学员标签快照]
+  - customer_tags: JSON [注释: 客户标签快照]
+  - question_count: INTEGER [注释: 问答次数快照]
+  - valid_days: INTEGER [注释: 任务周期天数快照]
+  - task_count: INTEGER [注释: 任务次数快照]
+  - completion_standard: VARCHAR(100) [注释: 完成标准快照]
+  - info_config_type: TINYINT [注释: 信息配置类型快照]
+  - min_stage_code: VARCHAR(50) [注释: 最小可见阶段编码快照]
+  - is_shared: TINYINT [注释: 是否共享快照]
+  - status: TINYINT [注释: 变更后状态快照]
+  - publish_time: DATETIME [注释: 发布时间快照]
+  - scope_dept_ids: JSON [注释: 适用部门ID列表快照]
+  - scope_user_ids: JSON [注释: 适用人员ID列表快照]
+  - share_dept_ids: JSON [注释: 共享部门ID列表快照]
+  - share_user_ids: JSON [注释: 共享人员ID列表快照]
+  - create_by: BIGINT [注释: 操作人ID]
+  - create_time: DATETIME [注释: 变更时间]
+索引信息:
+  - idx_create_time: ['create_time'] (普通索引)
+  - idx_tenant_training: ['tenant_id', 'training_id'] (普通索引)
+  - idx_training_id: ['training_id'] (普通索引)
+
+表名: ai_simulation_training_scope_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - training_id: BIGINT [注释: 训练ID]
+  - dept_id: BIGINT [注释: 适用部门ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_scope_dept: ['dept_id', 'training_id'] (普通索引)
+  - uk_training_scope_dept: ['training_id', 'dept_id'] (唯一索引)
+
+表名: ai_simulation_training_scope_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - training_id: BIGINT [注释: 训练ID]
+  - user_id: BIGINT [注释: 适用人员ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_scope_user: ['user_id', 'training_id'] (普通索引)
+  - uk_training_scope_user: ['training_id', 'user_id'] (唯一索引)
+
+表名: ai_simulation_training_session
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - session_no: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 会话编号（格式：SES + yyyyMMdd + 001-999）]
+  - training_id: BIGINT [注释: 训练ID]
+  - training_user_id: BIGINT [注释: 训练成员ID（所有训练会话都必须有）]
+  - user_id: BIGINT [注释: 用户ID]
+  - training_type: TINYINT [注释: 训练类型（1:管理员指定训练 2:员工自建训练）]
+  - max_round_count: INTEGER [注释: 最大问答轮数]
+  - max_message_count: INTEGER [注释: 最大消息条数（用户发送）]
+  - current_round: INTEGER [注释: 当前轮次]
+  - user_message_count: INTEGER [注释: 用户已发送消息数]
+  - resume_count: INTEGER [注释: 恢复训练次数]
+  - lock_frontend_key: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 当前持锁标签页标识]
+  - session_status: TINYINT [注释: 会话状态（0:未开始 1:进行中 2:未完成 3:已中断 4:已完成 5:已重置）]
+  - start_time: DATETIME [注释: 开始时间]
+  - end_time: DATETIME [注释: 结束时间]
+  - last_active_time: DATETIME [注释: 最后活跃时间（心跳/发消息时更新）]
+  - is_abnormal_close: TINYINT [注释: 是否异常关闭（0:否 1:是）]
+  - abnormal_reason: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 异常中断原因]
+  - complete_status: TINYINT [注释: 是否完成 0否 1是]
+  - complete_remark: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 完成原因]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0:未删除 1:已删除）]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_ai_simulation_training_session_tenant: ['tenant_id', 'del_flag'] (普通索引)
+  - idx_ai_simulation_training_session_training_user_status: ['training_id', 'user_id', 'session_status'] (普通索引)
+  - idx_ai_simulation_training_session_user_status_active: ['user_id', 'session_status', 'last_active_time'] (普通索引)
+
+表名: ai_simulation_training_share_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - training_id: BIGINT [注释: 训练ID]
+  - dept_id: BIGINT [注释: 共享部门ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_share_dept: ['dept_id', 'training_id'] (普通索引)
+  - uk_training_share_dept: ['training_id', 'dept_id'] (唯一索引)
+
+表名: ai_simulation_training_share_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - training_id: BIGINT [注释: 训练ID]
+  - user_id: BIGINT [注释: 共享人员ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_share_user: ['user_id', 'training_id'] (普通索引)
+  - uk_training_share_user: ['training_id', 'user_id'] (唯一索引)
+
+表名: ai_simulation_training_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - training_id: BIGINT [注释: 训练ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - source_type: TINYINT [注释: 加入来源 1部门导入 2直接选择]
+  - source_dept_id: BIGINT [注释: 部门命中时记录命中的部门ID]
+  - cycle_start_time: DATETIME [注释: 周期起算时间（首次访问时间或分配时间）]
+  - cycle_end_time: DATETIME [注释: 周期截止时间（cycle_start_time + valid_days）]
+  - student_status: TINYINT [注释: 成员状态 1正常 2已移除]
+  - training_status: TINYINT [注释: 训练状态 0任务未开放 1未开始 2超期未开始 3按时进行中 4超期进行中 5训练中 6按时完成 7超期完成 8未完成]
+  - completed_count: INTEGER [注释: 已完成次数]
+  - total_count: INTEGER [注释: 总次数（来自training主表的task_count）]
+  - first_start_time: DATETIME [注释: 首次开始时间]
+  - last_train_time: DATETIME [注释: 最近训练时间]
+  - complete_time: DATETIME [注释: 完成时间]
+  - remove_time: DATETIME [注释: 移除时间]
+  - remove_reason: VARCHAR(200) [注释: 移除原因]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - score: DECIMAL(10, 2) [注释: 得分]
+  - remove_type: TINYINT [注释: 移除类型 1手动移除]
+索引信息:
+  - idx_training_user_cycle: ['cycle_end_time', 'training_status'] (普通索引)
+  - idx_training_user_list: ['training_id', 'student_status', 'training_status'] (普通索引)
+  - idx_training_user_user: ['user_id', 'student_status'] (普通索引)
+  - uk_training_user: ['training_id', 'user_id'] (唯一索引)
+
+表名: ai_simulation_training_user_history
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_unicode_ci" [注释: 租户ID]
+  - training_user_id: BIGINT [注释: 训练成员ID（关联ai_simulation_training_user.id）]
+  - training_id: BIGINT [注释: 训练ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - source_type: TINYINT [注释: 来源类型 1=部门导入 2=直接选择]
+  - source_dept_id: BIGINT [注释: 来源部门ID（部门导入时记录）]
+  - student_status: TINYINT [注释: 成员状态 1=正常 2=已移除]
+  - remove_time: DATETIME [注释: 移除时间]
+  - remove_reason: VARCHAR(255) COLLATE "utf8mb4_unicode_ci" [注释: 移除原因]
+  - remove_type: TINYINT [注释: 移除类型 1=手动移除]
+  - training_status: TINYINT [注释: 训练状态 1=未开始 2=超期未开始 3=按时进行中 4=超期进行中 5=训练中 6=按时完成 7=超期完成 8=未完成]
+  - completed_count: INTEGER [注释: 已完成次数]
+  - total_count: INTEGER [注释: 总次数（-1表示不限次数）]
+  - cycle_start_time: DATETIME [注释: 周期开始时间]
+  - cycle_end_time: DATETIME [注释: 周期结束时间]
+  - change_type: VARCHAR(20) COLLATE "utf8mb4_unicode_ci" [注释: 变更类型：INSERT=新增 UPDATE=修改 REMOVE=移除 RESTORE=恢复]
+  - change_reason: VARCHAR(500) COLLATE "utf8mb4_unicode_ci" [注释: 变更原因]
+  - create_by: BIGINT [注释: 操作人ID]
+  - create_time: DATETIME [注释: 创建时间]
+索引信息:
+  - idx_create_time: ['create_time'] (普通索引)
+  - idx_training_id: ['training_id'] (普通索引)
+  - idx_training_user_id: ['training_user_id'] (普通索引)
+  - idx_user_id: ['user_id'] (普通索引)
+
+表名: ai_training_report
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - report_no: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 报告编号（格式：RPT + yyyyMMdd + 001-999）]
+  - session_id: BIGINT [注释: 会话ID]
+  - training_id: BIGINT [注释: 训练ID]
+  - training_user_id: BIGINT [注释: 训练成员ID（所有报告都必须有）]
+  - user_id: BIGINT [注释: 用户ID]
+  - training_type: TINYINT [注释: 训练类型（1:管理员指定训练 2:员工自建训练）]
+  - report_type: TINYINT [注释: 报告类型（1:正常结束报告 2:阶段性报告 3:异常中断报告 4:手动中断报告）]
+  - report_status: TINYINT [注释: 报告状态（0:生成中 1:已完成 2:生成失败）]
+  - report_error_msg: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 报告生成失败原因]
+  - total_score: DECIMAL(5, 2) [注释: 综合评分]
+  - rating: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 评级（优秀/良好/及格/待观察/不及格）]
+  - student_tags: JSON [注释: 学员画像]
+  - customer_tags: JSON [注释: 客户画像]
+  - info_config_type: TINYINT [注释: 是否允许分析 0不允许 1允许分析]
+  - ai_core_conclusions: VARCHAR(2000) COLLATE "utf8mb4_general_ci" [注释: ai报告核心结论]
+  - ai_highlights: VARCHAR(2000) COLLATE "utf8mb4_general_ci" [注释: ai报告具体内容亮点]
+  - ai_areas_for_improvement: VARCHAR(2000) COLLATE "utf8mb4_general_ci" [注释: ai报告具体内容待改进问题]
+  - ai_room_for_improvement: VARCHAR(2000) COLLATE "utf8mb4_general_ci" [注释: ai报告改进空间]
+  - conversation_round_count: INTEGER [注释: 对话轮次]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0:未删除 1:已删除）]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_ai_training_report_session_id: ['session_id'] (普通索引)
+  - idx_ai_training_report_tenant: ['tenant_id', 'del_flag'] (普通索引)
+  - idx_ai_training_report_training_id: ['training_id'] (普通索引)
+  - idx_ai_training_report_user_status: ['user_id', 'report_status'] (普通索引)
+
+表名: beisen_event_callback_record
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - biz_id: VARCHAR(64) [注释: 北森业务唯一标识]
+  - biz_type: INTEGER [注释: 北森业务类型]
+  - biz_type_code: VARCHAR(64) [注释: 北森业务类型编码]
+  - biz_data: LONGTEXT [注释: 北森业务数据]
+  - raw_json: LONGTEXT [注释: 解密后的完整明文]
+  - json_md5: VARCHAR(32) [注释: 明文内容MD5摘要]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_create_time: ['create_time'] (普通索引)
+  - idx_tenant_biz_id: ['tenant_id', 'biz_id'] (普通索引)
+  - idx_tenant_biz_type_code: ['tenant_id', 'biz_type_code'] (普通索引)
+
+表名: beisen_raw_employee
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - beisen_user_id: BIGINT [注释: 北森人员主键(employeeInfo.userID)]
+  - employee_object_id: VARCHAR(64) [注释: 北森人员GUID(employeeInfo.objectId)]
+  - record_object_id: VARCHAR(64) [注释: 任职记录GUID(recordInfo.objectId)]
+  - staff_id: VARCHAR(64) [注释: 任职记录ID(recordInfo.staffID)]
+  - dept_beisen_oid: BIGINT [注释: 所属组织北森OId(recordInfo.oIdDepartment)]
+  - employee_name: VARCHAR(50) [注释: 员工姓名(employeeInfo.name)]
+  - employee_no: VARCHAR(30) [注释: 工号(recordInfo.jobNumber)]
+  - mobile_phone: VARCHAR(20) [注释: 手机号(employeeInfo.mobilePhone)]
+  - activation_state: TINYINT [注释: 激活状态(employeeInfo.activationState)]
+  - employee_status: VARCHAR(10) [注释: 员工状态(recordInfo.employeeStatus)]
+  - is_current_record: TINYINT [注释: 是否当前任职(recordInfo.isCurrentRecord)]
+  - std_is_deleted: TINYINT [注释: 北森删除标志(0否/1是)]
+  - biz_modified_time: DATETIME [注释: 北森业务修改时间]
+  - raw_json: LONGTEXT [注释: 完整原始JSON(含employeeInfo+recordInfo)]
+  - json_md5: VARCHAR(32) [注释: JSON内容MD5摘要]
+  - sys_user_id: BIGINT [注释: 映射后的本地sys_user.user_id]
+  - transform_status: VARCHAR(20) [注释: 转换状态(PENDING/SUCCESS/DEPT_MISSING/FAILED)]
+  - transform_error: VARCHAR(500) [注释: 转换失败原因]
+  - last_transform_time: DATETIME [注释: 最后转换时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_biz_modified: ['biz_modified_time'] (普通索引)
+  - idx_dept_oid: ['dept_beisen_oid'] (普通索引)
+  - idx_employee_no: ['employee_no'] (普通索引)
+  - idx_transform_status: ['transform_status'] (普通索引)
+  - uk_beisen_tenant_user_id: ['tenant_id', 'beisen_user_id'] (唯一索引)
+
+表名: beisen_raw_job_post
+列信息:
+  - id: BIGINT (主键) [注释: 自增主键]
+  - name: VARCHAR(100) COLLATE "utf8mb4_unicode_ci" [注释: 岗位名称]
+  - o_id: VARCHAR(20) COLLATE "utf8mb4_unicode_ci" [注释: 北森ID]
+  - tenant_id: BIGINT [注释: 租户ID]
+  - code: VARCHAR(20) COLLATE "utf8mb4_unicode_ci" [注释: 岗位编码]
+  - establish_date: DATETIME [注释: 设立日期]
+  - start_date: DATETIME [注释: 生效日期]
+  - stop_date: DATETIME [注释: 失效日期]
+  - status: TINYINT [注释: 状态 1=启用 0=禁用]
+  - o_id_resource_set: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 资源集合ID]
+  - o_id_job_grade_low: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 最低职级ID]
+  - o_id_job_grade_high: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 最高职级ID]
+  - o_id_professional_line: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 职业线ID]
+  - o_id_job_sequence: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 职务序列ID]
+  - o_id_job_level: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 职级ID]
+  - highest_o_id_job_level: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 最高职级ID]
+  - o_id_job_level_type: VARCHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 职级类型ID]
+  - business_modified_by: BIGINT [注释: 业务修改人ID]
+  - business_modified_time: DATETIME [注释: 业务修改时间]
+  - o_order: INTEGER [注释: 排序]
+  - description: TEXT COLLATE "utf8mb4_unicode_ci" [注释: 描述]
+  - score: DECIMAL(10, 2) [注释: 评分]
+  - json_md5: VARCHAR(32) COLLATE "utf8mb4_unicode_ci" [注释: None]
+  - raw_json: LONGTEXT [注释: None]
+  - job_post_key: VARCHAR(100) COLLATE "utf8mb4_unicode_ci" [注释: 岗位Key]
+  - job_post_secret: VARCHAR(200) COLLATE "utf8mb4_unicode_ci" [注释: 岗位Secret]
+  - job_requirements: TEXT COLLATE "utf8mb4_unicode_ci" [注释: 岗位要求]
+  - object_id: CHAR(36) COLLATE "utf8mb4_unicode_ci" [注释: 业务唯一标识UUID]
+  - custom_properties: JSON [注释: 自定义属性]
+  - translate_properties: JSON [注释: 翻译属性]
+  - std_is_deleted: TINYINT [注释: 是否逻辑删除 0=否 1=是]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建人ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人ID]
+  - update_time: DATETIME [注释: 修改时间]
+索引信息:
+  - idx_created_time: ['create_time'] (普通索引)
+  - idx_o_id: ['o_id'] (唯一索引)
+  - idx_status: ['status'] (普通索引)
+
+表名: beisen_raw_organization
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - beisen_oid: BIGINT [注释: 北森组织OId]
+  - parent_beisen_oid: BIGINT [注释: 父组织北森OId(pOIdOrgAdmin)]
+  - dept_name: VARCHAR(100) [注释: 组织名称]
+  - dept_code: VARCHAR(50) [注释: 组织编码(code)]
+  - short_name: VARCHAR(100) [注释: 组织简称]
+  - org_object_id: VARCHAR(64) [注释: 北森组织GUID(objectId)]
+  - person_in_charge: BIGINT [注释: 负责人北森UserID]
+  - org_status: TINYINT [注释: 北森组织状态(1启用/0停用)]
+  - broad_type: VARCHAR(50) [注释: 组织大类(broadType)]
+  - order_admin: INTEGER [注释: 行政维度排序号]
+  - tree_path: VARCHAR(500) [注释: 北森原始TreePath]
+  - std_is_deleted: TINYINT [注释: 北森删除标志(0否/1是)]
+  - biz_modified_time: DATETIME [注释: 北森业务修改时间]
+  - raw_json: LONGTEXT [注释: 完整原始JSON]
+  - json_md5: VARCHAR(32) [注释: JSON内容MD5摘要]
+  - sys_dept_id: BIGINT [注释: 映射后的本地sys_dept.dept_id]
+  - transform_status: VARCHAR(20) [注释: 转换状态(PENDING/SUCCESS/PARENT_MISSING/FAILED)]
+  - transform_error: VARCHAR(500) [注释: 转换失败原因]
+  - last_transform_time: DATETIME [注释: 最后转换时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_biz_modified: ['biz_modified_time'] (普通索引)
+  - idx_parent_oid: ['parent_beisen_oid'] (普通索引)
+  - idx_person_in_charge: ['person_in_charge'] (普通索引)
+  - idx_transform_status: ['transform_status'] (普通索引)
+  - uk_beisen_tenant_oid: ['tenant_id', 'beisen_oid'] (唯一索引)
+
+表名: exam_badge
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - exam_id: BIGINT [注释: None]
+  - badge_id: BIGINT [注释: 徽章id]
+  - score_gt: DECIMAL(6, 2) [注释: 得分大于]
+  - score_lt: DECIMAL(6, 2) [注释: 得分小于]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_exam_badge_tenant_id: ['tenant_id'] (普通索引)
+
+表名: exam_info
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - paper_id: BIGINT [注释: 试卷id]
+  - snapshot_id: BIGINT [注释: 试卷快照ID，NULL=老数据按paperId兜底]
+  - exam_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 考试名称]
+  - exam_type: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 考试类型]
+  - exam_course_type: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 考试类型（课程考试/临时考试）]
+  - passing_score: DOUBLE [注释: 及格分]
+  - duration: INTEGER [注释: 考试时长]
+  - auth: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 权限 1完全公开 2限部门 3限人员,4限课程]
+  - max_attempts: INTEGER [注释: 限考次数]
+  - min_submit_time: INTEGER [注释: 最低交卷时长]
+  - notes: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 注意事项]
+  - exam_start_time: DATETIME [注释: 考试开始时间]
+  - exam_end_time: DATETIME [注释: 考试结束时间]
+  - course_id: BIGINT [注释: 关联课程id]
+  - biz_type: TINYINT [注释: 归属类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 归属业务ID，课程ID或学习任务ID]
+  - source_type: TINYINT [注释: 来源类型 1手工维护 2引用课程]
+  - source_course_id: BIGINT [注释: 来源课程ID，任务考试引用课程时记录]
+  - source_exam_id: BIGINT [注释: 来源课程考试ID，任务考试引用课程时记录]
+  - min_stage_code: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 课程最小可见阶段编码，对应字典 employee_stage.dict_value]
+  - exam_status: SMALLINT [注释: 0:停用1:正常]
+  - grading_method: TINYINT [注释: 1:自动阅卷,2:人工阅卷]
+  - face_authentication: TINYINT [注释: 人脸认证 0:否,1:是]
+  - camera_capture: TINYINT [注释: 摄像头抓拍0:否,1:是]
+  - disable_switching: TINYINT [注释: 禁止切屏0:否,1:是]
+  - switching_limit_count: INTEGER [注释: 切屏次数上限（disable_switching=1时有效）]
+  - switching_action: INTEGER [注释: 达到切屏次数后的动作：1=带答案强制交卷，2=强制打0分交卷]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - assigned_grader_ids: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 授权阅卷人ID列表（逗号分隔，PENDING_MARKING阶段由管理员分配）]
+  - is_show: TINYINT [注释: 控制考试是否在列表中展示。
+课后考试的展示受课程启用状态控制：未启用的课程下所有的考试均在列表中不可见]
+  - completion_criteria: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 完成标准
+1 考试通过
+2 提交试卷
+3 考试通过或完成考试次数]
+  - submit_limit: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 交卷限制
+0 不限制
+1 答完全部题目]
+  - dept_id: BIGINT [注释: 所属部门]
+  - exam_time_unlimited: INTEGER [注释: 0:有时间限制 -1:不限]
+外键约束:
+  - ['paper_id'] -> exam_paper.['id']
+索引信息:
+  - idx_exam_biz: ['biz_type', 'biz_id', 'del_flag', 'exam_status'] (普通索引)
+  - idx_exam_info_tenant_del_create: ['tenant_id', 'del_flag', 'create_time'] (普通索引)
+  - idx_exam_info_tenant_id: ['tenant_id'] (普通索引)
+  - idx_exam_source: ['source_type', 'source_course_id', 'source_exam_id', 'biz_id', 'del_flag'] (普通索引)
+  - idx_exam_status_time: ['exam_status', 'del_flag', 'exam_start_time', 'exam_end_time', 'create_time'] (普通索引)
+  - idx_paper_id: ['paper_id'] (普通索引)
+
+表名: exam_log
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - course_id: BIGINT [注释: 课程id]
+  - course_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 课程名称]
+  - exam_id: BIGINT [注释: 在线考试id]
+  - biz_type: TINYINT [注释: 业务类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - task_item_id: BIGINT [注释: 任务节点ID]
+  - exam_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 考试名称]
+  - paper_id: BIGINT [注释: 试卷id]
+  - paper_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 试卷名称]
+  - question_count: SMALLINT [注释: 试题总数]
+  - total_score: DOUBLE [注释: 试卷总分]
+  - score: DOUBLE [注释: 本次得分]
+  - duration: DECIMAL(8, 1) [注释: 考试时长]
+  - paper_json: JSON [注释: 试卷JSON]
+  - paper_json_answer: JSON [注释: 试卷JSON(包含答案)]
+  - post_exam_json: JSON [注释: 考后JSON]
+  - exam_log_status: BIGINT [注释: 考试状态 
+1 考试中
+2 阅卷中
+3 考试完成
+4 待考试
+5 待批阅
+6 批阅中
+7 异常提交
+8 缺考]
+  - number: BIGINT [注释: 次数]
+  - grading_method: TINYINT [注释: 1:自动阅卷,2:人工阅卷]
+  - pass_status: BIGINT [注释: 通过情况]
+  - submit_time: DATETIME [注释: 提交时间]
+  - allowed_switching_count: INTEGER [注释: 允许切屏次数（-1表示不限制）]
+  - actual_switching_count: INTEGER [注释: 实际切屏次数]
+  - force_submit_type: INTEGER [注释: 强制交卷类型：0不是强制交卷，1带答案的强制交卷，2零分的强制交卷]
+  - assigned_grader_ids: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 授权阅卷人ID列表（逗号分隔，PENDING_MARKING阶段由管理员分配）]
+  - grading_user_id: BIGINT [注释: 当前阅卷人ID（MANUAL_GRADING阶段单人，开卷时写入）]
+  - grading_start_time: DATETIME [注释: 进入MANUAL_GRADING状态的时间（用于超时回退兜底）]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+外键约束:
+  - ['exam_id'] -> exam_info.['id']
+  - ['paper_id'] -> exam_paper.['id']
+索引信息:
+  - idx_el_tenant_exam_user_del_score: ['tenant_id', 'exam_id', 'create_by', 'del_flag', 'score'] (普通索引)
+  - idx_exam_id: ['exam_id'] (普通索引)
+  - idx_exam_log_item: ['task_item_id', 'submit_time'] (普通索引)
+  - idx_exam_log_task: ['biz_type', 'biz_id', 'del_flag', 'submit_time'] (普通索引)
+  - idx_exam_log_tenant_id: ['tenant_id'] (普通索引)
+  - idx_exam_log_user: ['task_user_id', 'submit_time'] (普通索引)
+  - idx_paper_id: ['paper_id'] (普通索引)
+
+表名: exam_log_ai_review
+列信息:
+  - id: BIGINT [注释: None]
+  - exam_log_id: BIGINT [注释: exam_log表主键]
+  - course_id: BIGINT [注释: 课程Id]
+  - course_section_id: BIGINT [注释: 课程节 Id]
+  - exam_id: BIGINT [注释: 考试Id]
+  - review_result: TEXT COLLATE "utf8mb4_general_ci" [注释: 评审结果]
+  - review_suggest: TEXT COLLATE "utf8mb4_general_ci" [注释: 评审建议]
+  - study_absorption_rate: DECIMAL(10, 2) [注释: 学习吸收率 单位%
+仅作记录，实际按照课程节表中的进度展示]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - review_status: INTEGER [注释: 评审状态
+1进行中
+2已完成
+3失败]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_exam_log_ai_review_tenant_id: ['tenant_id'] (普通索引)
+
+表名: exam_log_record
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - course_id: BIGINT [注释: 课程id]
+  - course_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 课程名称]
+  - exam_id: BIGINT [注释: 在线考试id]
+  - exam_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 考试名称]
+  - paper_id: BIGINT [注释: 试卷id]
+  - paper_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 试卷名称]
+  - question_count: SMALLINT [注释: 试题总数]
+  - total_score: DOUBLE [注释: 试卷总分]
+  - score: DOUBLE [注释: 本次得分]
+  - duration: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 考试时长]
+  - paper_json: JSON [注释: 试卷JSON]
+  - paper_json_answer: JSON [注释: 试卷JSON(包含答案)]
+  - post_exam_json: JSON [注释: 考后JSON]
+  - exam_log_status: BIGINT [注释: 考试状态]
+  - number: BIGINT [注释: 次数]
+  - grading_method: TINYINT [注释: 1:自动阅卷,2:人工阅卷]
+  - pass_status: BIGINT [注释: 通过情况]
+  - submit_time: DATETIME [注释: 提交时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+外键约束:
+  - ['exam_id'] -> exam_info.['id']
+  - ['paper_id'] -> exam_paper.['id']
+索引信息:
+  - idx_exam_id: ['exam_id'] (普通索引)
+  - idx_exam_log_tenant_id: ['tenant_id'] (普通索引)
+  - idx_paper_id: ['paper_id'] (普通索引)
+
+表名: exam_manual_grading
+列信息:
+  - exam_id: BIGINT (主键) [注释: 考试id]
+  - hide_student_name: TINYINT [注释: 隐藏学员姓名0:否,1:是]
+  - grading_reminder: TINYINT [注释: 阅卷提醒0:否,1:是]
+  - grader_type: TINYINT [注释: 阅卷人员类型1:部门主管,2:本级及以上本门主管,3:指定人员]
+  - grader_ids: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 人员ids]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+外键约束:
+  - ['exam_id'] -> exam_info.['id']
+索引信息:
+  - idx_exam_manual_grading_tenant_id: ['tenant_id'] (普通索引)
+
+表名: exam_marking_fail_log
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - exam_log_id: BIGINT [注释: 考试记录ID]
+  - request_params: TEXT COLLATE "utf8mb4_general_ci" [注释: 请求参数JSON(ExamLogBo序列化)]
+  - fail_reason: VARCHAR(2000) COLLATE "utf8mb4_general_ci" [注释: 失败原因]
+  - retry_count: INTEGER [注释: 已重试次数]
+  - max_retry: INTEGER [注释: 最大重试次数]
+  - status: TINYINT [注释: 状态：0=待重试，1=重试成功，2=死信]
+  - next_retry_time: DATETIME [注释: 下次重试时间]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0存在 1删除）]
+索引信息:
+  - idx_exam_log_id: ['exam_log_id'] (普通索引)
+  - idx_status_next_retry: ['status', 'next_retry_time'] (普通索引)
+
+表名: exam_paper
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - paper_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 试卷名称]
+  - paper_category: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 试卷分类]
+  - composition_method: TINYINT [注释: 1:固定组卷2:随机组卷]
+  - paper_status: TINYINT [注释: 0:停用1:正常]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - paper_random_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 随机组卷ID（前端给）]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - is_show: TINYINT [注释: 控制试卷是否展示到列表中
+新增考试时，多试卷混题生成的新试卷不展示到列表中，该字段赋false
+其余正常维护的试卷赋值 true]
+  - dept_id: BIGINT [注释: 部门id]
+  - is_shared: TINYINT [注释: 是否共享（0否 1是）]
+索引信息:
+  - idx_exam_paper_tenant_id: ['tenant_id'] (普通索引)
+
+表名: exam_paper_json
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - paper_id: BIGINT [注释: 试卷id]
+  - total_score: DOUBLE [注释: 试卷总分]
+  - pass_score: DOUBLE [注释: 及格分]
+  - question_count: SMALLINT [注释: 试题总数]
+  - paper_json: JSON [注释: 试卷JSON]
+  - paper_json_answer: JSON [注释: 试卷JSON(包含答案)]
+  - bank_ids: JSON [注释: 题库]
+  - question_type_count: JSON [注释: 分类试题数量]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: TIMESTAMP [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+外键约束:
+  - ['paper_id'] -> exam_paper.['id']
+索引信息:
+  - idx_exam_paper_json_tenant_id: ['tenant_id'] (普通索引)
+  - paper_id: ['paper_id'] (普通索引)
+
+表名: exam_paper_json_bak_250729
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - paper_id: BIGINT [注释: 试卷id]
+  - total_score: DOUBLE [注释: 试卷总分]
+  - question_count: SMALLINT [注释: 试题总数]
+  - paper_json: JSON [注释: 试卷JSON]
+  - paper_json_answer: JSON [注释: 试卷JSON(包含答案)]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: TIMESTAMP [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+外键约束:
+  - ['paper_id'] -> exam_paper.['id']
+索引信息:
+  - paper_id: ['paper_id'] (普通索引)
+
+表名: exam_paper_random_count
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - paper_random_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 随机组卷ID（前端给）]
+  - title_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 大题ID]
+  - bank_id: BIGINT [注释: 所属题库Id]
+  - bank_ids: JSON [注释: 关联题库列表]
+  - question_type: TINYINT [注释: 0：单选1：多选2：判断3：填空4：简答5：组合6：组合子类]
+  - difficulty_level: TINYINT [注释: 0：简单1：一般2：较难3：极难]
+  - count: TINYINT [注释: 数量]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_exam_paper_random_count_tenant_id: ['tenant_id'] (普通索引)
+
+表名: exam_paper_random_count_bak_250729
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - paper_random_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 随机组卷ID（前端给）]
+  - title_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 大题ID]
+  - bank_id: BIGINT [注释: 所属题库Id]
+  - question_type: TINYINT [注释: 0：单选1：多选2：判断3：填空4：简答5：组合6：组合子类]
+  - difficulty_level: TINYINT [注释: 0：简单1：一般2：较难3：极难]
+  - count: TINYINT [注释: 数量]
+
+表名: exam_paper_share_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - paper_id: BIGINT [注释: 试卷ID]
+  - dept_id: BIGINT [注释: 共享部门ID]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+索引信息:
+  - idx_dept_id: ['dept_id'] (普通索引)
+  - idx_paper_id: ['paper_id'] (普通索引)
+
+表名: exam_paper_share_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - paper_id: BIGINT [注释: 试卷ID]
+  - user_id: BIGINT [注释: 共享人员ID]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+索引信息:
+  - idx_paper_id: ['paper_id'] (普通索引)
+  - idx_user_id: ['user_id'] (普通索引)
+
+表名: exam_paper_snapshot
+列信息:
+  - id: BIGINT (主键) [注释: 主键(雪花算法)]
+  - exam_id: BIGINT [注释: 所属考试ID]
+  - paper_id: BIGINT [注释: 来源试卷ID]
+  - snapshot_json: LONGTEXT [注释: 快照时的试卷JSON（不含答案）]
+  - snapshot_json_answer: LONGTEXT [注释: 快照时的试卷JSON（含答案）]
+  - total_score: DECIMAL(10, 2) [注释: 快照总分]
+  - pass_score: DECIMAL(10, 2) [注释: 快照及格分]
+  - question_count: BIGINT [注释: 快照题目数量]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_paper_id: ['paper_id'] (普通索引)
+  - uk_exam_tenant: ['exam_id', 'tenant_id'] (唯一索引)
+
+表名: flow_category
+列信息:
+  - category_id: BIGINT (主键) [注释: 流程分类ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - parent_id: BIGINT [注释: 父流程分类id]
+  - ancestors: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 祖级列表]
+  - category_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 流程分类名称]
+  - order_num: INTEGER [注释: 显示顺序]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+
+表名: flow_definition
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - flow_code: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 流程编码]
+  - flow_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 流程名称]
+  - category: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 流程类别]
+  - version: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 流程版本]
+  - is_publish: TINYINT [注释: 是否发布（0未发布 1已发布 9失效）]
+  - form_custom: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 审批表单是否自定义（Y是 N否）]
+  - form_path: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 审批表单路径]
+  - activity_status: TINYINT [注释: 流程激活状态（0挂起 1激活）]
+  - listener_type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 监听器类型]
+  - listener_path: VARCHAR(400) COLLATE "utf8mb4_general_ci" [注释: 监听器路径]
+  - ext: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 业务详情 存业务表对象json字符串]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+
+表名: flow_his_task
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - definition_id: BIGINT [注释: 对应flow_definition表的id]
+  - instance_id: BIGINT [注释: 对应flow_instance表的id]
+  - task_id: BIGINT [注释: 对应flow_task表的id]
+  - node_code: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 开始节点编码]
+  - node_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 开始节点名称]
+  - node_type: TINYINT [注释: 开始节点类型（0开始节点 1中间节点 2结束节点 3互斥网关 4并行网关）]
+  - target_node_code: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 目标节点编码]
+  - target_node_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 结束节点名称]
+  - approver: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 审批者]
+  - cooperate_type: TINYINT [注释: 协作方式(1审批 2转办 3委派 4会签 5票签 6加签 7减签)]
+  - collaborator: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 协作人]
+  - skip_type: VARCHAR(10) COLLATE "utf8mb4_general_ci" [注释: 流转类型（PASS通过 REJECT退回 NONE无动作）]
+  - flow_status: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 流程状态（1审批中 2 审批通过 9已退回 10失效）]
+  - form_custom: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 审批表单是否自定义（Y是 N否）]
+  - form_path: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 审批表单路径]
+  - message: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 审批意见]
+  - variable: TEXT COLLATE "utf8mb4_general_ci" [注释: 任务变量]
+  - ext: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 业务详情 存业务表对象json字符串]
+  - create_time: DATETIME [注释: 任务开始时间]
+  - update_time: DATETIME [注释: 审批完成时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+
+表名: flow_instance
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - definition_id: BIGINT [注释: 对应flow_definition表的id]
+  - business_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 业务id]
+  - node_type: TINYINT [注释: 节点类型（0开始节点 1中间节点 2结束节点 3互斥网关 4并行网关）]
+  - node_code: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 流程节点编码]
+  - node_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 流程节点名称]
+  - variable: TEXT COLLATE "utf8mb4_general_ci" [注释: 任务变量]
+  - flow_status: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 流程状态（0待提交 1审批中 2 审批通过 3自动通过 4终止 5作废 6撤销 7取回  8已完成 9已退回 10失效）]
+  - activity_status: TINYINT [注释: 流程激活状态（0挂起 1激活）]
+  - def_json: TEXT COLLATE "utf8mb4_general_ci" [注释: 流程定义json]
+  - create_by: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - ext: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 扩展字段，预留给业务系统使用]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+
+表名: flow_node
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - node_type: TINYINT [注释: 节点类型（0开始节点 1中间节点 2结束节点 3互斥网关 4并行网关）]
+  - definition_id: BIGINT [注释: 流程定义id]
+  - node_code: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 流程节点编码]
+  - node_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 流程节点名称]
+  - permission_flag: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 权限标识（权限类型:权限标识，可以多个，用逗号隔开)]
+  - node_ratio: DECIMAL(6, 3) [注释: 流程签署比例值]
+  - coordinate: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 坐标]
+  - any_node_skip: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 任意结点跳转]
+  - listener_type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 监听器类型]
+  - listener_path: VARCHAR(400) COLLATE "utf8mb4_general_ci" [注释: 监听器路径]
+  - handler_type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 处理器类型]
+  - handler_path: VARCHAR(400) COLLATE "utf8mb4_general_ci" [注释: 处理器路径]
+  - form_custom: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 审批表单是否自定义（Y是 N否）]
+  - form_path: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 审批表单路径]
+  - version: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 版本]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - ext: TEXT COLLATE "utf8mb4_general_ci" [注释: 扩展属性]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+
+表名: flow_skip
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - definition_id: BIGINT [注释: 流程定义id]
+  - now_node_code: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 当前流程节点的编码]
+  - now_node_type: TINYINT [注释: 当前节点类型（0开始节点 1中间节点 2结束节点 3互斥网关 4并行网关）]
+  - next_node_code: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 下一个流程节点的编码]
+  - next_node_type: TINYINT [注释: 下一个节点类型（0开始节点 1中间节点 2结束节点 3互斥网关 4并行网关）]
+  - skip_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 跳转名称]
+  - skip_type: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 跳转类型（PASS审批通过 REJECT退回）]
+  - skip_condition: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 跳转条件]
+  - coordinate: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 坐标]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+
+表名: flow_task
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - definition_id: BIGINT [注释: 对应flow_definition表的id]
+  - instance_id: BIGINT [注释: 对应flow_instance表的id]
+  - node_code: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 节点编码]
+  - node_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 节点名称]
+  - node_type: TINYINT [注释: 节点类型（0开始节点 1中间节点 2结束节点 3互斥网关 4并行网关）]
+  - form_custom: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 审批表单是否自定义（Y是 N否）]
+  - form_path: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 审批表单路径]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+
+表名: flow_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - type: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 人员类型（1待办任务的审批人权限 2待办任务的转办人权限 3待办任务的委托人权限）]
+  - processed_by: VARCHAR(80) COLLATE "utf8mb4_general_ci" [注释: 权限人]
+  - associated: BIGINT [注释: 任务表id]
+  - create_time: DATETIME [注释: 创建时间]
+  - create_by: VARCHAR(80) COLLATE "utf8mb4_general_ci" [注释: 创建人]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志]
+  - tenant_id: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+索引信息:
+  - user_associated: ['associated'] (普通索引)
+  - user_processed_type: ['processed_by', 'type'] (普通索引)
+
+表名: gen_table
+列信息:
+  - table_id: BIGINT (主键) [注释: 编号]
+  - data_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 数据源名称]
+  - table_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 表名称]
+  - table_comment: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 表描述]
+  - sub_table_name: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 关联子表的表名]
+  - sub_table_fk_name: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 子表关联的外键名]
+  - class_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 实体类名称]
+  - tpl_category: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 使用的模板（crud单表操作 tree树表操作）]
+  - package_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 生成包路径]
+  - module_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 生成模块名]
+  - business_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 生成业务名]
+  - function_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 生成功能名]
+  - function_author: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 生成功能作者]
+  - gen_type: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 生成代码方式（0zip压缩包 1自定义路径）]
+  - gen_path: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 生成路径（不填默认项目路径）]
+  - options: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 其它生成选项]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+
+表名: gen_table_column
+列信息:
+  - column_id: BIGINT (主键) [注释: 编号]
+  - table_id: BIGINT [注释: 归属表编号]
+  - column_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 列名称]
+  - column_comment: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 列描述]
+  - column_type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 列类型]
+  - java_type: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: JAVA类型]
+  - java_field: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: JAVA字段名]
+  - is_pk: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否主键（1是）]
+  - is_increment: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否自增（1是）]
+  - is_required: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否必填（1是）]
+  - is_insert: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否为插入字段（1是）]
+  - is_edit: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否编辑字段（1是）]
+  - is_list: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否列表字段（1是）]
+  - is_query: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否查询字段（1是）]
+  - query_type: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 查询方式（等于、不等于、大于、小于、范围）]
+  - html_type: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 显示类型（文本框、文本域、下拉框、复选框、单选框、日期控件）]
+  - dict_type: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 字典类型]
+  - sort: INTEGER [注释: 排序]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+
+表名: question_bank_dept
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - question_bank_id: BIGINT [注释: 题库id]
+  - dept_id: BIGINT [注释: 部门id]
+
+表名: question_bank_info
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - type: TINYINT [注释: 0：企业培训1：业务培训2：进阶培训]
+  - introduce: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 题库简介]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - data_status: TINYINT [注释: 状态 0禁用1启用]
+  - name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 题库名称]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - visible_status: TINYINT [注释: 可见状态  （0：公开  1：仅部门可见）]
+  - dept_id: BIGINT [注释: 题库所属部门 Id]
+  - is_shared: TINYINT [注释: 是否共享（0否 1是）]
+索引信息:
+  - idx_question_bank_info_tenant_id: ['tenant_id'] (普通索引)
+
+表名: question_bank_share_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - bank_id: BIGINT [注释: 题库ID]
+  - dept_id: BIGINT [注释: 部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户ID]
+索引信息:
+  - uk_bank_dept: ['bank_id', 'dept_id'] (唯一索引)
+
+表名: question_bank_share_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - bank_id: BIGINT [注释: 题库ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户ID]
+索引信息:
+  - uk_bank_user: ['bank_id', 'user_id'] (唯一索引)
+
+表名: question_info
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - bank_id: BIGINT [注释: 所属题库Id]
+  - question_status: VARCHAR(1) COLLATE "utf8mb4_general_ci" [注释: 状态 0草稿1启用2禁用3作废]
+  - question_type: TINYINT [注释: 0：单选1：多选2：判断3：填空4：简答5：组合6：组合子类]
+  - difficulty_level: TINYINT [注释: 0：简单1：一般2：较难3：极难]
+  - title: TEXT COLLATE "utf8mb4_general_ci" [注释: 试题内容]
+  - title_str: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 标题纯字符串]
+  - analysis: TEXT COLLATE "utf8mb4_general_ci" [注释: 答案解析]
+  - question_option: JSON [注释: 选项]
+  - answer: JSON [注释: 答案]
+  - extended_attributes: JSON [注释: 拓展属性]
+  - question_number: INTEGER [注释: 序号，组合子类排序使用]
+  - short_answer_score_type: TINYINT [注释: 简答题打分类型 0：AI 1：关键字]
+  - multiple_choice_score_type: TINYINT [注释: 多选题得分类型 0:全对得分1：少选给分]
+  - fill_blanks_score_type: TINYINT [注释: 填空题得分类型 0：全对得分1：按空得分]
+  - fill_banks_answer_in_order: TINYINT [注释: 填空题按顺序作答 0否1是]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - title_file_json: JSON [注释: 题目附件集合 Json 格式]
+  - answer_file_json: JSON [注释: 答案中的附件集合]
+  - analysis_file_json: JSON [注释: 解析中的附件集合 ]
+索引信息:
+  - idx_bank_status_type: ['bank_id', 'del_flag', 'question_status', 'question_type'] (普通索引)
+  - idx_question_info_tenant_id: ['tenant_id'] (普通索引)
+
+表名: question_ref_index
+列信息:
+  - id: BIGINT (主键) [注释: 主键(雪花算法)]
+  - question_id: BIGINT [注释: 题目ID]
+  - ref_type: TINYINT [注释: 引用类型（1=试卷 2=考试快照）]
+  - ref_id: BIGINT [注释: 引用对象ID（ref_type=1为paper_id，=2为snapshot_id）]
+  - exam_id: BIGINT [注释: 冗余考试ID（ref_type=2时）]
+  - paper_id: BIGINT [注释: 冗余试卷ID]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_question: ['question_id', 'tenant_id'] (普通索引)
+  - idx_ref: ['ref_type', 'ref_id'] (普通索引)
+  - uk_question_ref: ['question_id', 'ref_type', 'ref_id', 'tenant_id'] (唯一索引)
+
+表名: question_ref_sync_state
+列信息:
+  - id: BIGINT (主键) [注释: 主键(雪花算法)]
+  - question_id: BIGINT [注释: 题目ID]
+  - sync_status: TINYINT [注释: 同步状态（0=未同步 1=已同步 2=同步中）]
+  - sync_time: DATETIME [注释: 完成同步时间]
+  - sync_version: INTEGER [注释: 同步版本号]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - uk_question_tenant: ['question_id', 'tenant_id'] (唯一索引)
+
+表名: report_record
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - dept_id: BIGINT [注释: 部门Id]
+  - user_id: BIGINT [注释: 用户Id]
+  - rule: TINYINT [注释: 汇报类型（0：日报 1：周报 2：月报）]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - attachment: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 附件]
+  - template_id: BIGINT [注释: 模板Id]
+  - content: JSON [注释: 周日报内容]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_report_record_tenant_id: ['tenant_id'] (普通索引)
+
+表名: report_record_recipient
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - record_id: BIGINT [注释: 汇报记录Id]
+  - recipient: BIGINT [注释: 汇报对象]
+
+表名: report_rules
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - rule: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 汇报规则（0：日报、1：周报、2：月报）可多选]
+  - long_term: TINYINT [注释: 是否长期（0 否  1 是）]
+  - start_time: DATE [注释: 开始时间]
+  - end_time: DATE [注释: 结束时间]
+  - rule_status: TINYINT [注释: 状态  （0禁用 1启用）]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_report_rules_tenant_id: ['tenant_id'] (普通索引)
+
+表名: report_rules_dept
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - rules_id: BIGINT [注释: 规则Id]
+  - dept_id: BIGINT [注释: 部门Id]
+
+表名: report_rules_user
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - rules_id: BIGINT [注释: 规则Id]
+  - user_id: BIGINT [注释: 用户Id]
+
+表名: report_template
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - template_name: VARCHAR(60) COLLATE "utf8mb4_general_ci" [注释: 模板名称]
+  - type: TINYINT [注释: 类型（0：日报 1周报 2月报）]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - template_status: TINYINT [注释: 模板状态（0 禁用 1启用）]
+  - language: VARCHAR(60) COLLATE "utf8mb4_general_ci" [注释: 语言]
+  - annex: TINYINT [注释: 是否有附件（0无1有）]
+  - dept_id: BIGINT [注释: 部门Id]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_report_template_tenant_id: ['tenant_id'] (普通索引)
+
+表名: report_template_title
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - title: VARCHAR(60) COLLATE "utf8mb4_general_ci" [注释: 标题]
+  - template_id: BIGINT [注释: 模板Id]
+  - not_blank: TINYINT [注释: 是否必填(0 否 1是)]
+
+表名: sop_info
+列信息:
+  - info_id: BIGINT (主键) [注释: 主键ID]
+  - sop_name: VARCHAR(200) COLLATE "utf8mb4_0900_ai_ci" [注释: SOP名称]
+  - type: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务分类 0:短期任务 1：长期任务]
+  - start_date: DATE [注释: 开始日期]
+  - end_date: DATE [注释: 结束日期]
+  - sop_status: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 当前状态 0正常 1停用]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_0900_ai_ci" [注释: 备注]
+  - sop_scope: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务指派 0所有人 1限部门 2限人员]
+  - create_by: BIGINT [注释: 创建人]
+  - update_by: BIGINT [注释: 修改人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - language: VARCHAR(64) COLLATE "utf8mb4_0900_ai_ci" [注释: 语种]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+索引信息:
+  - idx_sop_info_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sop_info_dept
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - sop_id: BIGINT [注释: SOPId]
+  - dept_id: BIGINT [注释: 部门id]
+  - role_id: BIGINT [注释: 角色id]
+
+表名: sop_info_task
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - sop_id: BIGINT [注释: SOPId]
+  - task_id: BIGINT [注释: 任务Id]
+  - task_name: VARCHAR(200) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务名称]
+  - task_category: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务分类]
+  - task_type: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务类型]
+  - description: VARCHAR(200) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务介绍]
+  - task_status: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务状态]
+
+表名: sop_info_user
+列信息:
+  - id: BIGINT [注释: id]
+  - sop_id: BIGINT [注释: SOPId]
+  - user_id: BIGINT [注释: 用户Id]
+
+表名: sop_manage
+列信息:
+  - sop_manage_id: BIGINT (主键) [注释: 主键]
+  - manage_name: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: sop名称]
+  - manage_category: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: sop分类]
+  - course_id: BIGINT [注释: 关联课程]
+  - manage_status: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 状态 0正常 1停用]
+  - action: TEXT COLLATE "utf8mb4_general_ci" [注释: 标准动作]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sop_manage_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sop_task
+列信息:
+  - task_id: BIGINT (主键) [注释: 任务ID]
+  - language: VARCHAR(64) COLLATE "utf8mb4_0900_ai_ci" [注释: 语种]
+  - task_name: VARCHAR(200) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务名称]
+  - category: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务分类 1:部门任务 2:公司任务 3:其他任务]
+  - type: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务类型 0：每天 1：每周 2：每月 3：固定日期]
+  - execution_day: TINYINT [注释: 执行日期(每周:1-7表示周一到周日;每月:1-31)]
+  - task_status: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 任务状态 0：正常 1停用]
+  - duration: DECIMAL(4, 1) [注释: 任务时长(小时数，范围0-1000，可含1位小数)]
+  - create_dept: BIGINT [注释: 创建部门]
+  - description: TEXT COLLATE "utf8mb4_0900_ai_ci" [注释: 任务介绍]
+  - start_date: DATE [注释: 开始日期(固定日期类型使用)]
+  - end_date: DATE [注释: 结束日期(固定日期类型使用)]
+  - fix_method: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 固定日期执行方式（0 每天执行 1执行一次）]
+  - priority: VARCHAR(100) COLLATE "utf8mb4_0900_ai_ci" [注释: 优先级 0:普通任务 1:优先任务 2:立刻处理 3：可延后]
+  - self_task: BIGINT [注释: 任务来源：1:个人创建 
+-1:主管指派
+0:系统任务]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_by: BIGINT [注释: 创建人]
+  - update_by: BIGINT [注释: 更新人]
+  - sop_manage_id: BIGINT [注释: 任务关联Sop管理Id]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+索引信息:
+  - idx_sop_task_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sop_task_push_records
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - sop_id: BIGINT [注释: 关联的SOP ID]
+  - task_id: BIGINT [注释: 关联的具体任务ID]
+  - user_id: BIGINT [注释: 接收用户ID]
+  - complete_percent: INTEGER [注释: 任务完成度]
+  - scheduled_time: DATE [注释: 任务时间]
+  - work_progress: TEXT COLLATE "utf8mb4_general_ci" [注释: 任务完成情况]
+  - work_report_id: BIGINT [注释: 工作报告表ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sop_id: ['sop_id'] (普通索引)
+  - idx_sop_task_push_records_tenant_id: ['tenant_id'] (普通索引)
+  - idx_task_id: ['task_id'] (普通索引)
+  - idx_user_id: ['user_id'] (普通索引)
+
+表名: sop_work_report_info
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - data_type: TINYINT [注释: 类别 0日报1周报2月报]
+  - data_status: TINYINT [注释: 状态 0草稿1发布]
+  - attachment: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 附件]
+  - complete_percent: INTEGER [注释: 任务完成度]
+  - summary: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 总结]
+  - other_work_progress: TEXT COLLATE "utf8mb4_general_ci" [注释: 其他工作]
+  - other_work_complete_percent: BIGINT [注释: 其他工作进度]
+  - coordination_work_progress: TEXT COLLATE "utf8mb4_general_ci" [注释: 需协调的工作]
+  - remark: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - publish_time: DATETIME [注释: 发布时间]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - language: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 语种]
+
+表名: sop_work_report_item_info
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - sop_id: BIGINT [注释: 关联的SOP ID]
+  - task_id: BIGINT [注释: 关联的具体任务ID]
+  - task_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 任务名称]
+  - user_id: BIGINT [注释: 接收用户ID]
+  - complete_percent: INTEGER [注释: 任务完成度]
+  - scheduled_time: DATE [注释: 任务时间]
+  - work_progress: TEXT COLLATE "utf8mb4_general_ci" [注释: 任务完成情况]
+  - work_report_id: BIGINT [注释: 工作报告表ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - push_record_id: BIGINT [注释: 推送记录Id]
+  - language: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sop_work_report_item_info_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sop_work_report_person_relevancy
+列信息:
+  - report_id: BIGINT (主键) [注释: 工作报告信息表ID]
+  - employee_id: BIGINT (主键) [注释: 员工ID]
+  - read_flag: BIT [注释: None]
+  - language: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sop_work_report_person_relevancy_tenant_id: ['tenant_id'] (普通索引)
+
+表名: study_simulation_record
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - biz_type: TINYINT [注释: 业务类型，任务场景固定为2]
+  - biz_id: BIGINT [注释: 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - task_item_id: BIGINT [注释: 任务节点ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - simulation_id: BIGINT [注释: 外部场景定义ID]
+  - attempt_no: INTEGER [注释: 第几次模拟]
+  - status: TINYINT [注释: 1进行中 2完成 3通过 4未通过 5异常退出]
+  - score: DECIMAL(8, 2) [注释: 最终生效得分]
+  - level: VARCHAR(32) [注释: 最终生效等级编码]
+  - ai_score: DECIMAL(8, 2) [注释: AI 原始评分]
+  - ai_level: VARCHAR(32) [注释: AI 原始等级编码]
+  - ai_score_progress: INTEGER [注释: AI评分进度 0未开始 1进行中 2已完成 3异常]
+  - ai_resp_json: JSON [注释: AI原始响应结果]
+  - manual_score: DECIMAL(8, 2) [注释: 人工调整后分值]
+  - manual_level: VARCHAR(32) [注释: 人工调整后等级编码]
+  - manual_reason: VARCHAR(255) [注释: 人工干预原因]
+  - manual_remark: VARCHAR(1000) [注释: 人工干预详细说明]
+  - manual_by: BIGINT [注释: 人工干预人]
+  - manual_time: DATETIME [注释: 人工干预时间]
+  - pass_status: TINYINT [注释: 0未通过 1通过]
+  - start_time: DATETIME [注释: 开始时间]
+  - finish_time: DATETIME [注释: 结束时间]
+  - duration_seconds: INTEGER [注释: 耗时秒数]
+  - result_json: JSON [注释: 结果明细]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) [注释: 删除标志 0未删除 1已删除]
+  - audio_file_id: BIGINT [注释: 录音文件ID，关联 sys_oss.oss_id]
+索引信息:
+  - idx_sim_record_item: ['task_item_id', 'finish_time'] (普通索引)
+  - idx_sim_record_task: ['biz_id', 'finish_time'] (普通索引)
+  - idx_sim_record_user: ['task_user_id', 'finish_time'] (普通索引)
+
+表名: study_task
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_name: VARCHAR(128) [注释: 任务名称]
+  - dept_id: BIGINT [注释: 所属部门ID]
+  - task_type: TINYINT [注释: 1周期任务 2循环任务]
+  - valid_days: INTEGER [注释: 自加入起允许学习天数]
+  - cycle_gap_days: INTEGER [注释: 完成后间隔多少天开启下一轮，仅循环任务使用]
+  - max_cycle_count: INTEGER [注释: 最大学习轮次数，仅循环任务使用]
+  - status: TINYINT [注释: 0草稿 1启用 2停用]
+  - description: VARCHAR(500) [注释: 任务说明]
+  - is_fast_forward: TINYINT [注释: 视频快进 0关闭 1开启]
+  - is_stage_sequential_unlocking: TINYINT [注释: 阶段顺序学习 0关闭 1开启]
+  - is_mistake: TINYINT [注释: 防挂机 0关闭 1开启]
+  - publish_time: DATETIME [注释: 发布时间]
+  - has_started: TINYINT [注释: 是否已启动过 0否 1是]
+  - last_enable_time: DATETIME [注释: 最近一次启动时间]
+  - del_flag: CHAR(1) [注释: 删除标志 0未删除 1已删除]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - min_stage_code: VARCHAR(32) [注释: 学习任务最小可见阶段编码，对应字典 employee_stage.dict_value]
+索引信息:
+  - idx_task_dept: ['dept_id', 'create_time'] (普通索引)
+  - idx_task_name: ['task_name'] (普通索引)
+  - idx_task_status: ['status', 'create_time'] (普通索引)
+
+表名: study_task_ref_course
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - course_id: BIGINT [注释: 课程ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_task_ref_course: ['course_id', 'task_id'] (普通索引)
+  - uk_task_ref_course: ['task_id', 'course_id'] (唯一索引)
+
+表名: study_task_scope_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - dept_id: BIGINT [注释: 适用部门ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_scope_dept: ['dept_id', 'task_id'] (普通索引)
+  - uk_task_scope_dept: ['task_id', 'dept_id'] (唯一索引)
+
+表名: study_task_scope_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - user_id: BIGINT [注释: 适用人员ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_scope_user: ['user_id', 'task_id'] (普通索引)
+  - uk_task_scope_user: ['task_id', 'user_id'] (唯一索引)
+
+表名: study_task_stage_ref_course
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - stage_id: BIGINT [注释: 任务阶段ID，对应sys_course_stage.id]
+  - course_id: BIGINT [注释: 课程ID]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_stage_ref_course: ['course_id', 'task_id', 'stage_id'] (普通索引)
+  - uk_task_stage_ref_course: ['task_id', 'stage_id', 'course_id'] (普通索引)
+
+表名: study_task_stage_user_instance
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - stage_id: BIGINT [注释: 阶段ID，对应sys_course_stage.id]
+  - user_id: BIGINT [注释: 用户ID]
+  - planned_start_time: DATETIME [注释: 预计开始时间]
+  - planned_end_time: DATETIME [注释: 预计截止时间]
+  - actual_start_time: DATETIME [注释: 实际首次进入阶段时间]
+  - actual_end_time: DATETIME [注释: 实际完成时间]
+  - stage_status: TINYINT [注释: 1未开始 2待开放 3进行中 4已完成 5已逾期]
+  - is_overdue: TINYINT [注释: 是否已逾期 0否 1是]
+  - notify_on_unlock: TINYINT [注释: 是否在开放时通知学员 0否 1是]
+  - notify_status: TINYINT [注释: 通知状态 0未通知 1已通知]
+  - notify_time: DATETIME [注释: 通知时间]
+  - allow_learn_after_deadline: TINYINT [注释: 截止后是否允许继续学习 0否 1是]
+  - progress: DECIMAL(5, 2) [注释: 阶段进度]
+  - completed_item_count: INTEGER [注释: 已完成节点数]
+  - total_item_count: INTEGER [注释: 节点总数]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_task_stage_instance: ['task_id', 'round_id', 'stage_status', 'is_overdue'] (普通索引)
+  - idx_task_stage_user: ['user_id', 'stage_status'] (普通索引)
+  - uk_task_stage_user: ['task_user_id', 'round_id', 'stage_id'] (唯一索引)
+
+表名: study_task_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - join_source: TINYINT [注释: 1部门命中 2直接指定]
+  - source_dept_id: BIGINT [注释: 部门命中时记录命中的部门ID]
+  - join_time: DATETIME [注释: 加入时间]
+  - member_status: TINYINT [注释: 1有效 2已移出]
+  - task_status: TINYINT [注释: 1未开始 2学习中 3已完成 4已过期]
+  - current_round_no: INTEGER [注释: 当前轮次编号]
+  - current_round_id: BIGINT [注释: 当前轮次ID]
+  - current_progress: DECIMAL(5, 2) [注释: 当前总进度]
+  - completed_item_count: INTEGER [注释: 已完成节点数]
+  - total_item_count: INTEGER [注释: 节点总数]
+  - last_learn_time: DATETIME [注释: 最近学习时间]
+  - remove_time: DATETIME [注释: 移出时间]
+  - remove_reason: VARCHAR(200) [注释: 移出原因]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_task_user_list: ['task_id', 'member_status', 'task_status', 'current_progress'] (普通索引)
+  - idx_task_user_user: ['user_id', 'member_status'] (普通索引)
+  - uk_task_user: ['task_id', 'user_id'] (唯一索引)
+
+表名: study_task_user_round
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - task_user_id: BIGINT [注释: 任务成员ID]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - round_no: INTEGER [注释: 第几轮]
+  - round_status: TINYINT [注释: 1待开启 2进行中 3已完成 4已过期]
+  - open_time: DATETIME [注释: 轮次开启时间]
+  - deadline: DATETIME [注释: 轮次截止时间]
+  - start_time: DATETIME [注释: 首次开始时间]
+  - complete_time: DATETIME [注释: 完成时间]
+  - expire_time: DATETIME [注释: 过期时间]
+  - round_progress: DECIMAL(5, 2) [注释: 轮次进度]
+  - completed_item_count: INTEGER [注释: 已完成节点数]
+  - total_item_count: INTEGER [注释: 节点总数]
+  - valid_days_snapshot: INTEGER [注释: valid_days快照]
+  - cycle_gap_days_snapshot: INTEGER [注释: cycle_gap_days快照]
+  - max_cycle_count_snapshot: INTEGER [注释: max_cycle_count快照]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_task_round: ['task_id', 'round_status', 'deadline'] (普通索引)
+  - idx_task_round_user: ['task_user_id', 'round_status'] (普通索引)
+  - uk_task_user_round: ['task_user_id', 'round_no'] (唯一索引)
+
+表名: sys_client
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - client_id: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 客户端id]
+  - client_key: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 客户端key]
+  - client_secret: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 客户端秘钥]
+  - grant_type: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 授权类型]
+  - device_type: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 设备类型]
+  - active_timeout: INTEGER [注释: token活跃超时时间]
+  - timeout: INTEGER [注释: token固定超时]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 状态（0正常 1停用）]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+
+表名: sys_config
+列信息:
+  - config_id: BIGINT (主键) [注释: 参数主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - config_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 参数名称]
+  - config_key: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 参数键名]
+  - config_value: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 参数键值]
+  - config_type: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 系统内置（Y是 N否）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+
+表名: sys_course
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_name: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 课程名称]
+  - lecturer: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 主讲老师]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 课程分类]
+  - cover: BIGINT [注释: 课程封面]
+  - intro: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 课程简介]
+  - auth: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 权限 1完全公开 2限部门 3限人员]
+  - min_stage_code: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 课程最小可见阶段编码，对应字典 employee_stage.dict_value]
+  - status: TINYINT [注释: 0 正常 1禁用]
+  - dept_id: BIGINT [注释: 部门ID]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - kind: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 课程类型]
+  - is_fast_forward: TINYINT [注释: 视频快进 0关闭  1开启]
+  - is_courseware_sequential_unlocking: TINYINT [注释: 课件顺序解锁 0关闭  1开启]
+  - is_mistake: TINYINT [注释: 弹窗防呆校验 0关闭  1开启]
+  - is_duration: TINYINT [注释: 学习进度限制 0关闭  1开启]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - source: TINYINT [注释: 课程来源 0-自建 1-AI 做课]
+  - is_shared: TINYINT [注释: 是否共享（0否 1是）]
+索引信息:
+  - idx_sys_course_min_stage_code: ['min_stage_code'] (普通索引)
+  - idx_sys_course_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_course_dept
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_id: BIGINT [注释: 课程id]
+  - dept_id: BIGINT [注释: 部门id]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_course_dept_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_course_section
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - course_id: BIGINT [注释: 关联课程ID，外键关联课程表]
+  - section_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 课节名称]
+  - section_order: INTEGER [注释: 节数学习序号，用于排序]
+  - status: TINYINT [注释: 状态 0启用 1禁用]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - create_by: BIGINT [注释: 创建者ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者ID]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_course_section_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_course_share_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - course_id: BIGINT [注释: 课程ID]
+  - dept_id: BIGINT [注释: 共享部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+
+表名: sys_course_share_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - course_id: BIGINT [注释: 课程ID]
+  - user_id: BIGINT [注释: 共享人员ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+
+表名: sys_course_stage
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - course_id: BIGINT [注释: 课程ID]
+  - biz_type: TINYINT [注释: 归属类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 归属业务ID，课程ID或学习任务ID]
+  - is_courseware_sequential_unlocking: TINYINT [注释: 阶段内课件顺序学习 0关闭 1开启]
+  - unlock_delay_days: INTEGER [注释: 加入任务后多少天开放学习]
+  - notify_on_unlock: TINYINT [注释: 阶段开放时是否通知学员 0否 1是]
+  - deadline_days: INTEGER [注释: 阶段开放后多少天截止，null表示不截止]
+  - allow_learn_after_deadline: TINYINT [注释: 截止后是否允许继续学习 0否 1是]
+  - stage_name: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 阶段名称]
+  - description: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 阶段描述]
+  - sort: INTEGER [注释: 排序号]
+  - status: TINYINT [注释: 状态 0禁用 1启用]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_stage_biz: ['biz_type', 'biz_id', 'del_flag', 'sort'] (普通索引)
+  - idx_sys_course_stage_course_id: ['course_id'] (普通索引)
+  - idx_sys_course_stage_status: ['status'] (普通索引)
+  - idx_sys_course_stage_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_course_stage_process
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - course_id: BIGINT [注释: 课程ID]
+  - biz_type: TINYINT [注释: 归属类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 归属业务ID，课程ID或学习任务ID]
+  - source_type: TINYINT [注释: 来源类型 1手工维护 2引用课程]
+  - source_course_id: BIGINT [注释: 来源课程ID，任务节点引用课程时记录]
+  - source_course_process_id: BIGINT [注释: 来源课程节点ID，任务节点引用课程时记录]
+  - stage_id: BIGINT [注释: 阶段ID]
+  - process_type: TINYINT [注释: 过程类型 0课件 1作业 2考试 3场景模拟]
+  - process_id: BIGINT [注释: 过程ID（根据type关联不同表）]
+  - reviewer_type: TINYINT [注释: 复核人类型 1直线经理 2指定人员]
+  - sort: INTEGER [注释: 排序号]
+  - status: TINYINT [注释: 状态 0禁用 1启用]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_stage_process_biz: ['biz_type', 'biz_id', 'del_flag', 'sort'] (普通索引)
+  - idx_stage_process_source: ['source_type', 'source_course_id', 'source_course_process_id', 'stage_id', 'del_flag'] (普通索引)
+  - idx_stage_process_stage: ['stage_id', 'del_flag', 'sort'] (普通索引)
+  - idx_sys_course_stage_process_course_id: ['course_id'] (普通索引)
+  - idx_sys_course_stage_process_course_stage: ['course_id', 'stage_id'] (普通索引)
+  - idx_sys_course_stage_process_process_type_id: ['process_type', 'process_id'] (普通索引)
+  - idx_sys_course_stage_process_sort: ['sort'] (普通索引)
+  - idx_sys_course_stage_process_stage_id: ['stage_id'] (普通索引)
+  - idx_sys_course_stage_process_status: ['status'] (普通索引)
+  - idx_sys_course_stage_process_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_course_stage_process_reviewer
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - process_id: BIGINT [注释: 阶段节点ID，对应sys_course_stage_process.id]
+  - user_id: BIGINT [注释: 指定复核人ID]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_stage_process_reviewer_process_id: ['process_id'] (普通索引)
+  - idx_stage_process_reviewer_tenant_id: ['tenant_id'] (普通索引)
+  - idx_stage_process_reviewer_user_id: ['user_id'] (普通索引)
+  - uk_stage_process_reviewer_process_user: ['process_id', 'user_id'] (唯一索引)
+
+表名: sys_course_stage_user_instance
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_id: BIGINT [注释: 课程id]
+  - stage_id: BIGINT [注释: 阶段id]
+  - user_id: BIGINT [注释: 用户id]
+  - grade: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 预留-完成等级 -1 未完成 0:按时完成,1:优秀完成,2：今日之星]
+  - progress: DECIMAL(6, 2) [注释: 进度]
+  - completed_item_count: INTEGER [注释: 已完成任务项数]
+  - total_item_count: INTEGER [注释: 任务项总数]
+  - over_time: DATETIME [注释: 完成时间]
+  - comments: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 总结]
+  - create_by: BIGINT [注释: 创建者]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - student_status: TINYINT [注释: 学员状态（1正常 2已移除）]
+索引信息:
+  - uk_course_stage_user: ['course_id', 'stage_id', 'user_id'] (唯一索引)
+
+表名: sys_courseware
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_id: BIGINT [注释: 课程ID]
+  - biz_type: TINYINT [注释: 归属类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 归属业务ID，课程ID或学习任务ID]
+  - source_type: TINYINT [注释: 来源类型 1手工维护 2引用课程]
+  - source_course_id: BIGINT [注释: 来源课程ID，任务课件引用课程时记录]
+  - source_courseware_id: BIGINT [注释: 来源课程课件ID，任务课件引用课程时记录]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - name: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 课件名称]
+  - category_id: BIGINT [注释: 课件分类]
+  - type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 课件类型]
+  - file_id: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 文件]
+  - status: TINYINT [注释: 状态 0启用 1禁用]
+  - dept_id: BIGINT [注释: 部门ID]
+  - remarks: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - sort: INTEGER [注释: 课件学习顺序]
+  - duration_minute: INTEGER [注释: 时长分]
+  - duration_second: INTEGER [注释: 时长秒]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - exam_id: BIGINT [注释: type 为考试时，此字段不能为空。
+该字段为 exam_info表中主键]
+索引信息:
+  - category_id__index: ['category_id'] (普通索引)
+  - idx_courseware_biz: ['biz_type', 'biz_id', 'del_flag', 'status', 'sort'] (普通索引)
+  - idx_courseware_source: ['source_type', 'source_course_id', 'source_courseware_id', 'biz_id', 'del_flag'] (普通索引)
+  - idx_sys_courseware_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_courseware_category
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - courseware_category: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 课件分类]
+  - language: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - parent_id: BIGINT [注释: 父级id]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - dept_id: BIGINT [注释: 部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_courseware_category_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_courseware_library
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - name: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 课件名称/课件名称]
+  - category_id: BIGINT [注释: 课件分类]
+  - type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 课件类型]
+  - file_id: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 文件]
+  - dept_id: BIGINT [注释: 所属部门ID]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - is_shared: TINYINT [注释: 是否共享（0否 1是）]
+  - status: TINYINT [注释: 状态 0启用 1禁用]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - remarks: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - duration_minute: INTEGER [注释: 时长分]
+  - duration_second: INTEGER [注释: 时长秒]
+索引信息:
+  - idx_sys_courseware_library_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_courseware_library_copy
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - name: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 课件名称/课件名称]
+  - category_id: BIGINT [注释: 课件分类]
+  - type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 课件类型]
+  - file_id: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 文件]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - is_shared: TINYINT [注释: 是否共享（0否 1是）]
+  - status: TINYINT [注释: 状态 0启用 1禁用]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - remarks: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - duration_minute: INTEGER [注释: 时长分]
+  - duration_second: INTEGER [注释: 时长秒]
+  - dept_id: BIGINT [注释: 所属部门ID]
+索引信息:
+  - idx_sys_courseware_library_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_courseware_library_share_dept
+列信息:
+  - id: BIGINT (主键) [注释: 主键(雪花算法)]
+  - library_id: BIGINT [注释: 课件库ID]
+  - dept_id: BIGINT [注释: 共享部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_dept_tenant: ['dept_id', 'tenant_id'] (普通索引)
+  - uk_lib_dept_tenant: ['library_id', 'dept_id', 'tenant_id'] (唯一索引)
+
+表名: sys_courseware_library_share_user
+列信息:
+  - id: BIGINT (主键) [注释: 主键(雪花算法)]
+  - library_id: BIGINT [注释: 课件库ID]
+  - user_id: BIGINT [注释: 共享人员ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_user_tenant: ['user_id', 'tenant_id'] (普通索引)
+  - uk_lib_user_tenant: ['library_id', 'user_id', 'tenant_id'] (唯一索引)
+
+表名: sys_dept
+列信息:
+  - dept_id: BIGINT (主键) [注释: 部门id]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - parent_id: BIGINT [注释: 父部门id]
+  - ancestors: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 祖级列表]
+  - dept_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 部门名称]
+  - dept_category: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 部门类别编码]
+  - beisen_oid: BIGINT [注释: 北森组织OId]
+  - order_num: INTEGER [注释: 显示顺序]
+  - leader: BIGINT [注释: 负责人]
+  - phone: VARCHAR(11) COLLATE "utf8mb4_general_ci" [注释: 联系电话]
+  - email: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 邮箱]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 部门状态（0正常 1停用）]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - uk_sys_dept_beisen: ['tenant_id', 'beisen_oid'] (唯一索引)
+
+表名: sys_dict_data
+列信息:
+  - dict_code: BIGINT (主键) [注释: 字典编码]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - dict_sort: INTEGER [注释: 字典排序]
+  - dict_label: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典标签]
+  - dict_value: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典键值]
+  - dict_type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典类型]
+  - css_class: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 样式属性（其他样式扩展）]
+  - list_class: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 表格回显样式]
+  - is_default: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否默认（Y是 N否）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - dict_id: BIGINT [注释: 字典类型id]
+  - parent_id: BIGINT [注释: 父id]
+  - tree: TINYINT [注释: 1有下级 0没有下级]
+
+表名: sys_dict_data_lang
+列信息:
+  - dict_code: BIGINT [注释: 字典数据id]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - dict_label: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典标签]
+
+表名: sys_dict_type
+列信息:
+  - dict_id: BIGINT (主键) [注释: 字典主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - dict_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典名称]
+  - dict_type: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典类型]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+索引信息:
+  - tenant_id: ['tenant_id', 'dict_type'] (唯一索引)
+
+表名: sys_dict_type_lang
+列信息:
+  - dict_id: BIGINT [注释: 字典类型id]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - dict_name: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 字典名称]
+
+表名: sys_exam_dept
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - exam_id: BIGINT [注释: 考试id]
+  - dept_id: BIGINT [注释: 部门id]
+  - post_id: BIGINT [注释: 岗位id]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_ed_exam_dept: ['exam_id', 'dept_id'] (普通索引)
+  - idx_sys_exam_dept_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_homework
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_id: BIGINT [注释: 课程ID]
+  - biz_type: TINYINT [注释: 归属类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 归属业务ID，课程ID或学习任务ID]
+  - source_type: TINYINT [注释: 来源类型 1手工维护 2引用课程]
+  - source_course_id: BIGINT [注释: 来源课程ID，任务作业引用课程时记录]
+  - source_homework_id: BIGINT [注释: 来源课程作业ID，任务作业引用课程时记录]
+  - min_stage_code: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 课程最小可见阶段编码，对应字典 employee_stage.dict_value]
+  - name: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 作业名称]
+  - requirements: VARCHAR(5000) COLLATE "utf8mb4_general_ci" [注释: 作业要求]
+  - files_info: JSON [注释: 附件信息集]
+  - complete_rule: TINYINT [注释: 完成规则 0 提交 1 通过]
+  - review_userid: VARCHAR(5000) COLLATE "utf8mb4_general_ci" [注释: 批改人]
+  - review_type: TINYINT [注释: 批阅方式 0 通过制 1打分制]
+  - total_score: INTEGER [注释: 打分规则-总分]
+  - pass_score: INTEGER [注释: 打分规则-及格分]
+  - sort: INTEGER [注释: 排序]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_homework_biz: ['biz_type', 'biz_id', 'del_flag', 'sort'] (普通索引)
+  - idx_homework_source: ['source_type', 'source_course_id', 'source_homework_id', 'biz_id', 'del_flag'] (普通索引)
+  - idx_sys_courseware_tenant_id: ['tenant_id'] (普通索引)
+  - sys_homework_tenant_id_IDX: ['tenant_id', 'course_id'] (普通索引)
+
+表名: sys_homework_record
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_id: BIGINT [注释: 课程id]
+  - homework_id: BIGINT [注释: 作业id]
+  - biz_type: TINYINT [注释: 业务类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - task_item_id: BIGINT [注释: 任务节点ID]
+  - user_id: BIGINT [注释: 用户id]
+  - answer: VARCHAR(5000) COLLATE "utf8mb4_general_ci" [注释: 作答内容]
+  - status: TINYINT [注释: 状态 0 草稿 1 已提交 2 通过 3未通过]
+  - files_info: JSON [注释: 作答附件信息集]
+  - submit_time: DATETIME [注释: 提交时间]
+  - review_type: TINYINT [注释: 批阅方式 0 通过制 1打分制]
+  - total_score: INTEGER [注释: 打分规则-总分]
+  - pass_score: INTEGER [注释: 打分规则-及格分]
+  - comments: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 批阅评语]
+  - review_userid: TEXT COLLATE "utf8mb4_general_ci" [注释: 批改人]
+  - review_time: DATETIME [注释: 批改时间]
+  - score: INTEGER [注释: 得分]
+  - set_score: INTEGER [注释: 修改后得分]
+  - create_by: BIGINT [注释: 创建者]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - student_status: TINYINT [注释: 学员状态（1正常 2已移除）]
+  - detail_pass_status: INTEGER [注释: 用于详情页展示的是否通过状态
+根据作业本身设置的通过条件，配合用户的作业记录得来，一旦通过不再回退
+0 未通过
+1 已通过]
+索引信息:
+  - idx_homework_record_item: ['task_item_id', 'submit_time'] (普通索引)
+  - idx_homework_record_task: ['biz_type', 'biz_id', 'del_flag', 'submit_time'] (普通索引)
+  - idx_homework_record_user: ['task_user_id', 'submit_time'] (普通索引)
+  - idx_sys_courseware_tenant_id: ['tenant_id'] (普通索引)
+  - sys_homework_record_tenant_id_IDX: ['tenant_id', 'course_id'] (普通索引)
+  - sys_homework_record_tenant_id_homework_id_IDX: ['tenant_id', 'homework_id'] (普通索引)
+  - sys_homework_record_user_id_IDX: ['user_id', 'tenant_id'] (普通索引)
+
+表名: sys_lang
+列信息:
+  - lang_id: INTEGER (主键) [注释: 主键]
+  - name: VARCHAR(20) COLLATE "utf8mb4_unicode_ci" [注释: 语言名称]
+  - lang: INTEGER [注释: 语言编号]
+  - language: VARCHAR(5) COLLATE "utf8mb4_unicode_ci" [注释: 语言代码]
+  - master: TINYINT [注释: 是否默认]
+  - hide: TINYINT [注释: 是否隐藏]
+  - remark: VARCHAR(20) COLLATE "utf8mb4_unicode_ci" [注释: 备注]
+索引信息:
+  - hide: ['hide'] (普通索引)
+
+表名: sys_logininfor
+列信息:
+  - info_id: BIGINT (主键) [注释: 访问ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - user_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 用户账号]
+  - client_key: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 客户端]
+  - device_type: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 设备类型]
+  - ipaddr: VARCHAR(128) COLLATE "utf8mb4_general_ci" [注释: 登录IP地址]
+  - login_location: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 登录地点]
+  - browser: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 浏览器类型]
+  - os: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 操作系统]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 登录状态（0成功 1失败）]
+  - msg: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 提示消息]
+  - login_time: DATETIME [注释: 访问时间]
+索引信息:
+  - idx_sys_logininfor_lt: ['login_time'] (普通索引)
+  - idx_sys_logininfor_s: ['status'] (普通索引)
+
+表名: sys_menu
+列信息:
+  - menu_id: BIGINT (主键) [注释: 菜单ID]
+  - menu_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 菜单名称]
+  - parent_id: BIGINT [注释: 父菜单ID]
+  - order_num: INTEGER [注释: 显示顺序]
+  - path: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 路由地址]
+  - component: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 组件路径]
+  - query_param: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 路由参数]
+  - is_frame: INTEGER [注释: 是否为外链（0是 1否）]
+  - is_cache: INTEGER [注释: 是否缓存（0缓存 1不缓存）]
+  - menu_type: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 菜单类型（M目录 C菜单 F按钮）]
+  - visible: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 显示状态（0显示 1隐藏）]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 菜单状态（0正常 1停用）]
+  - perms: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 权限标识]
+  - icon: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 菜单图标]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - menu_system: TINYINT [注释:  管理平台0  员工端1]
+
+表名: sys_menu_lang
+列信息:
+  - menu_id: BIGINT (主键) [注释: 系统菜单id]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" (主键) [注释: 语种]
+  - menu_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 菜单名称]
+
+表名: sys_message_notification
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - message: TEXT COLLATE "utf8mb4_general_ci" [注释: 消息内容]
+  - is_read: TINYINT [注释: 是否已读 0-未读 1-已读]
+  - read_time: DATETIME [注释: 已读时间（未读时为NULL）]
+  - create_by: BIGINT [注释: 创建者ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者ID]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - content: TEXT COLLATE "utf8mb4_general_ci" [注释: 消息正文]
+  - message_type: VARCHAR(2) COLLATE "utf8mb4_general_ci" [注释: 1 公告  2 站内信]
+  - is_popup: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: '是否弹窗 0 表示未弹窗，1 表示已弹窗']
+索引信息:
+  - idx_is_read: ['is_read'] (普通索引)
+  - idx_user_id: ['user_id'] (普通索引)
+
+表名: sys_message_record
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - template_id: BIGINT [注释: 模板id]
+  - content: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 消息内容]
+  - user_id: BIGINT [注释: 通知人员]
+  - create_time: DATETIME [注释: 创建时间]
+  - read_status: TINYINT [注释: 是否已读（0 未读  1 已读）]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_message_record_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_message_template
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 模板名称]
+  - content: TEXT COLLATE "utf8mb4_general_ci" [注释: 内容]
+  - model_status: INTEGER [注释: 状态 （0 正常 1禁用）]
+  - create_by: BIGINT [注释: 创建人]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 修改人]
+  - update_time: DATETIME [注释: 修改时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_message_template_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_notice
+列信息:
+  - notice_id: BIGINT (主键) [注释: 公告ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - notice_title: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 公告标题]
+  - notice_type: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 公告类型（1通知 2公告）]
+  - notice_content: LONGBLOB [注释: 公告内容]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 公告状态（0正常 1关闭）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - push_status: TINYINT [注释: 推送状态（0草稿 1已推送）]
+
+表名: sys_notice_user_status
+列信息:
+  - id: BIGINT (主键) [注释: 主键id]
+  - notice_id: BIGINT [注释: 公告id]
+  - user_id: VARCHAR(36) COLLATE "utf8mb4_general_ci" [注释: 用户id]
+  - notice_status: TINYINT [注释: 状态 0未读 1 已读]
+  - create_time: DATETIME [注释: 创建时间]
+
+表名: sys_oper_log
+列信息:
+  - oper_id: BIGINT (主键) [注释: 日志主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - title: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 模块标题]
+  - business_type: INTEGER [注释: 业务类型（0其它 1新增 2修改 3删除）]
+  - method: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 方法名称]
+  - request_method: VARCHAR(10) COLLATE "utf8mb4_general_ci" [注释: 请求方式]
+  - operator_type: INTEGER [注释: 操作类别（0其它 1后台用户 2手机端用户）]
+  - oper_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 操作人员]
+  - dept_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 部门名称]
+  - oper_url: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 请求URL]
+  - oper_ip: VARCHAR(128) COLLATE "utf8mb4_general_ci" [注释: 主机地址]
+  - oper_location: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 操作地点]
+  - oper_param: VARCHAR(4000) COLLATE "utf8mb4_general_ci" [注释: 请求参数]
+  - json_result: VARCHAR(4000) COLLATE "utf8mb4_general_ci" [注释: 返回参数]
+  - status: INTEGER [注释: 操作状态（0正常 1异常）]
+  - error_msg: VARCHAR(4000) COLLATE "utf8mb4_general_ci" [注释: 错误消息]
+  - oper_time: DATETIME [注释: 操作时间]
+  - cost_time: BIGINT [注释: 消耗时间]
+索引信息:
+  - idx_sys_oper_log_bt: ['business_type'] (普通索引)
+  - idx_sys_oper_log_ot: ['oper_time'] (普通索引)
+  - idx_sys_oper_log_s: ['status'] (普通索引)
+
+表名: sys_oss
+列信息:
+  - oss_id: BIGINT (主键) [注释: 对象存储主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - file_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 文件名]
+  - original_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 原名]
+  - md5: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: md5]
+  - file_suffix: VARCHAR(10) COLLATE "utf8mb4_general_ci" [注释: 文件后缀名]
+  - url: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: URL地址]
+  - m_url: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 视频转m3u8 URL地址]
+  - ext1: TEXT COLLATE "utf8mb4_general_ci" [注释: 扩展字段]
+  - file_size: BIGINT [注释: 文件大小]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_time: DATETIME [注释: 创建时间]
+  - create_by: BIGINT [注释: 上传人]
+  - update_time: DATETIME [注释: 更新时间]
+  - update_by: BIGINT [注释: 更新人]
+  - service: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 服务商]
+  - sys_vod_video_id: BIGINT [注释: sys_vod_video表主键 Id
+只有视频类才可能会存在该 Id]
+  - duration: BIGINT [注释: 媒体时长 单位 秒]
+
+表名: sys_oss_config
+列信息:
+  - oss_config_id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - config_key: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 配置key]
+  - access_key: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: accessKey]
+  - secret_key: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 秘钥]
+  - bucket_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 桶名称]
+  - prefix: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 前缀]
+  - endpoint: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 访问站点]
+  - domain: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 自定义域名]
+  - is_https: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否https（Y=是,N=否）]
+  - region: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 域]
+  - access_policy: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 桶权限类型(0=private 1=public 2=custom)]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 是否默认（0=是,1=否）]
+  - ext1: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 扩展字段]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+
+表名: sys_post
+列信息:
+  - post_id: BIGINT (主键) [注释: 岗位ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - dept_id: BIGINT [注释: 部门id]
+  - post_code: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 岗位编码]
+  - post_category: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 岗位类别编码]
+  - post_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 岗位名称]
+  - beisen_id: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 北森职务主键]
+  - post_sort: INTEGER [注释: 显示顺序]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 状态（0正常 1停用）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+索引信息:
+  - uk_sys_post_beisen: ['tenant_id', 'dept_id', 'beisen_id'] (唯一索引)
+
+表名: sys_role
+列信息:
+  - role_id: BIGINT (主键) [注释: 角色ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - role_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 角色名称]
+  - role_key: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 角色权限字符串]
+  - role_sort: INTEGER [注释: 显示顺序]
+  - data_scope: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 数据范围（1：全部数据权限 2：自定数据权限 3：本部门数据权限 4：本部门及以下数据权限 5：仅本人数据权限 6：部门及以下或本人数据权限）]
+  - menu_check_strictly: TINYINT [注释: 菜单树选择项是否关联显示]
+  - dept_check_strictly: TINYINT [注释: 部门树选择项是否关联显示]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 角色状态（0正常 1停用）]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - role_type: TINYINT [注释: 0管理端角色 1员工端角色]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+
+表名: sys_role_dept
+列信息:
+  - role_id: BIGINT (主键) [注释: 角色ID]
+  - dept_id: BIGINT (主键) [注释: 部门ID]
+
+表名: sys_role_menu
+列信息:
+  - role_id: BIGINT (主键) [注释: 角色ID]
+  - menu_id: BIGINT (主键) [注释: 菜单ID]
+
+表名: sys_scene_task
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - task_name: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 场景任务名称]
+  - task_type: TINYINT [注释: 任务类型 0自我介绍 1产品展示 2情景模拟 3流程讲解 4商务谈判]
+  - core_desc: JSON [注释: 核心考核目标]
+  - applicable_post: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 适用岗位]
+  - task_phase: VARCHAR(40) COLLATE "utf8mb4_general_ci" [注释: 任务阶段 1入职前考核（准入类）]
+  - core_target: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 核心考核目标]
+  - difficulty: TINYINT [注释: 难易度 1低 2较低 3中 4较高 5高]
+  - duration_recommend: INTEGER [注释: 时长推荐（秒）]
+  - retry_times: INTEGER [注释: 重考次数]
+  - task_specification: JSON [注释: 任务要求]
+  - answer_reference: JSON [注释: 作答参考提示]
+  - score_json: JSON [注释: 评分标准]
+  - rule_json: JSON [注释: 规则json]
+  - status: TINYINT [注释: 状态 0启用 1禁用]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 0:未删除,1:已删除]
+  - tenant_id: BIGINT [注释: 租户编号]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+索引信息:
+  - idx_sys_scene_task_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_social
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - user_id: BIGINT [注释: 用户ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户id]
+  - auth_id: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 平台+平台唯一id]
+  - source: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 用户来源]
+  - open_id: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 平台编号唯一id]
+  - user_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 登录账号]
+  - nick_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 用户昵称]
+  - email: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 用户邮箱]
+  - avatar: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 头像地址]
+  - access_token: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 用户的授权令牌]
+  - expire_in: INTEGER [注释: 用户的授权令牌的有效期，部分平台可能没有]
+  - refresh_token: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 刷新令牌，部分平台可能没有]
+  - access_code: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 平台的授权信息，部分平台可能没有]
+  - union_id: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 用户的 unionid]
+  - scope: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 授予的权限，部分平台可能没有]
+  - token_type: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 个别平台的授权信息，部分平台可能没有]
+  - id_token: VARCHAR(2000) COLLATE "utf8mb4_general_ci" [注释: id token，部分平台可能没有]
+  - mac_algorithm: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 小米平台用户的附带属性，部分平台可能没有]
+  - mac_key: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 小米平台用户的附带属性，部分平台可能没有]
+  - code: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 用户的授权code，部分平台可能没有]
+  - oauth_token: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: Twitter平台用户的附带属性，部分平台可能没有]
+  - oauth_token_secret: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: Twitter平台用户的附带属性，部分平台可能没有]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+
+表名: sys_tenant
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - contact_user_name: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 联系人]
+  - contact_phone: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 联系电话]
+  - company_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 企业名称]
+  - license_number: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 统一社会信用代码]
+  - address: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 地址]
+  - intro: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 企业简介]
+  - domain: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 域名]
+  - remark: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - package_id: BIGINT [注释: 租户套餐编号]
+  - expire_time: DATETIME [注释: 过期时间]
+  - account_count: INTEGER [注释: 用户数量（-1不限制）]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 租户状态（0正常 1停用）]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - beisen_app_key: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 北森 appkey]
+  - beisen_app_secret: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 北森 appsecret]
+  - beisen_base_url: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 北森接口请求地址]
+  - beisen_default_password: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 北森同步用户时为每个用户赋值的初始密码]
+  - beisen_tenant_id: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 北森租户ID]
+
+表名: sys_tenant_package
+列信息:
+  - package_id: BIGINT (主键) [注释: 租户套餐id]
+  - package_name: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 套餐名称]
+  - menu_ids: TEXT COLLATE "utf8mb4_general_ci" [注释: 菜单ID集合]
+  - remark: VARCHAR(200) COLLATE "utf8mb4_general_ci" [注释: 备注]
+  - menu_check_strictly: TINYINT [注释: 菜单树选择项是否关联显示]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 状态（0正常 1停用）]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+
+表名: sys_user
+列信息:
+  - user_id: BIGINT (主键) [注释: 用户ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - dept_id: BIGINT [注释: 部门ID]
+  - leader: BIGINT [注释: 直线经理]
+  - user_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 用户账号]
+  - nick_name: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 用户昵称]
+  - user_type: VARCHAR(10) COLLATE "utf8mb4_general_ci" [注释: 用户类型（sys_user系统用户）]
+  - email: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 用户邮箱]
+  - phonenumber: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 通用手机号码，长度兼容国际格式手机号]
+  - employee_no: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 工号]
+  - beisen_user_id: BIGINT [注释: 北森人员主键ID]
+  - id_card: VARCHAR(18) COLLATE "utf8mb4_general_ci" [注释: 身份证号]
+  - sex: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 用户性别（0男 1女 2未知）]
+  - avatar: BIGINT [注释: 头像地址]
+  - password: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 密码]
+  - status: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 帐号状态（0在职 1禁用,2临时,3退休,4离职,5试用）]
+  - employee_stage_code: VARCHAR(32) COLLATE "utf8mb4_general_ci" [注释: 员工阶段编码，对应字典 employee_stage.dict_value]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+  - login_ip: VARCHAR(128) COLLATE "utf8mb4_general_ci" [注释: 最后登录IP]
+  - login_date: DATETIME [注释: 最后登录时间]
+  - is_manager: TINYINT [注释: 是否是主管 0否 1是]
+  - employment_date: DATE [注释: 入职日期]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - remark: VARCHAR(500) COLLATE "utf8mb4_general_ci" [注释: 备注]
+索引信息:
+  - idx_sys_user_employee_stage_code: ['employee_stage_code'] (普通索引)
+  - idx_sys_user_login_email: ['email', 'tenant_id', 'create_time'] (普通索引)
+  - idx_sys_user_login_phone: ['phonenumber', 'tenant_id', 'create_time'] (普通索引)
+  - idx_sys_user_login_username: ['user_name', 'tenant_id', 'create_time'] (普通索引)
+  - idx_sys_user_tenant_pick_phone: ['phonenumber', 'status', 'tenant_id'] (普通索引)
+  - idx_sys_user_tenant_pick_username: ['user_name', 'status', 'tenant_id'] (普通索引)
+  - uk_sys_user_beisen: ['tenant_id', 'beisen_user_id'] (唯一索引)
+
+表名: sys_user_badge
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - user_id: BIGINT [注释: 用户id]
+  - badge_id: BIGINT [注释: 徽章id]
+  - is_wear: TINYINT [注释: 1佩戴 0不戴]
+  - expire_time: DATETIME [注释: 过期时间]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - update_by: BIGINT [注释: 更新者]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_user_badge_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_user_course
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - course_id: BIGINT [注释: 课程id]
+  - user_id: BIGINT [注释: 用户id]
+  - study_status: VARCHAR(100) COLLATE "utf8mb4_general_ci" [注释: 学习状态 1未开始 0学习中 2已完成]
+  - pass_status: BIGINT [注释: 考试通过状态 0未通过  1已通过  2未考试]
+  - score: DECIMAL(6, 2) [注释: 考试成绩]
+  - begin_study_time: DATETIME [注释: 课程开始学习时间]
+  - end_study_time: DATETIME [注释: 课程完成学习时间]
+  - courseware_id: BIGINT [注释: 当前正在学习课件id]
+  - time: BIGINT [注释: 当前视频学习时间]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - minutes: INTEGER [注释: 累计学习时长 分钟]
+  - seconds: INTEGER [注释: 累计学习时长 秒]
+  - dept_id: BIGINT [注释: 用户部门ID]
+  - source_type: TINYINT [注释: 来源类型: 1=部门导入, 2=直接选择]
+  - progress: DECIMAL(6, 2) [注释: 进度]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - student_status: TINYINT [注释: 学员状态（1正常 2已移除）]
+索引信息:
+  - idx_sys_user_course_tenant_id: ['tenant_id'] (普通索引)
+  - idx_sys_user_course_user_course: ['user_id', 'course_id'] (普通索引)
+  - idx_uc_user_course: ['user_id', 'course_id', 'progress'] (普通索引)
+
+表名: sys_user_course_section
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - section_id: BIGINT [注释: 关联章节ID]
+  - user_id: BIGINT [注释: 用户id]
+  - study_progress: DECIMAL(5, 2) [注释: 学习进度，百分比存储（例如 85.50 表示 85.5%）]
+  - study_duration: DECIMAL(8, 2) [注释: 学习时长，单位：秒]
+  - study_absorption_rate: DECIMAL(5, 2) [注释: 学习吸收度，百分比存储（例如 90.00 表示 90%）]
+  - create_by: BIGINT [注释: 创建者ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者ID]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_user_course_section_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_user_courseware
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - user_id: BIGINT [注释: 用户id]
+  - course_id: BIGINT [注释: None]
+  - courseware_id: BIGINT [注释: 课件id]
+  - biz_type: TINYINT [注释: 业务类型 1课程 2学习任务]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - task_item_id: BIGINT [注释: 任务节点ID，对应sys_course_stage_process.id]
+  - minutes: INTEGER [注释: 累计学习时长 分钟]
+  - seconds: INTEGER [注释: 累计学习时长 秒]
+  - progress: DECIMAL(6, 2) [注释: 进度]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - time: DECIMAL(8, 2) [注释: 视频学习时间]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - last_Progress: DECIMAL(6, 2) [注释: 上次学习进度]
+  - last_time: DECIMAL(8, 2) [注释: 上次学习时间]
+  - scope_json: JSON [注释: 评分标准]
+索引信息:
+  - idx_sys_user_courseware_tenant_id: ['tenant_id'] (普通索引)
+  - idx_ucw_task: ['biz_type', 'task_id', 'task_user_id', 'round_id', 'task_item_id', 'user_id'] (普通索引)
+
+表名: sys_user_exam
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - exam_id: BIGINT [注释: 考试id]
+  - user_id: BIGINT [注释: 用户id]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - dept_id: BIGINT [注释: 用户部门ID]
+  - course_id: BIGINT [注释: 课程id]
+  - biz_type: TINYINT [注释: 业务类型 1课程 2学习任务]
+  - biz_id: BIGINT [注释: biz_type =2 时 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - task_item_id: BIGINT [注释: 任务节点ID]
+  - course_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 课程名称]
+  - exam_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 考试名称]
+  - paper_id: BIGINT [注释: 试卷id]
+  - paper_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 试卷名称]
+  - question_count: SMALLINT [注释: 试题总数]
+  - total_score: DOUBLE [注释: 试卷总分]
+  - score: DOUBLE [注释: 本次得分]
+  - duration: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 考试时长]
+  - exam_log_status: BIGINT [注释: 考试状态
+1 考试中
+2 阅卷中
+3 考试完成
+4 待考试
+5 待批阅
+6 批阅中
+7 异常提交
+8 缺考]
+  - number: BIGINT [注释: 次数]
+  - grading_method: TINYINT [注释: 1:自动阅卷,2:人工阅卷]
+  - pass_status: BIGINT [注释: 通过情况
+-2 未开始
+-1 枚举文案写的是“进行中”
+0 未通过
+1 通过
+2 待批阅]
+  - exam_time: DATETIME [注释: 考试时间]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - source_type: TINYINT [注释: 来源类型: 1=部门导入, 2=直接选择]
+  - student_status: TINYINT [注释: 学员状态（1正常 2已移除）]
+  - detail_pass_status: INTEGER [注释: 用于详情页展示的是否通过状态
+根据考试本身设置的通过条件，配合用户的考试记录得来，一旦通过不再回退
+0 未通过
+1 已通过]
+索引信息:
+  - idx_sys_user_exam_tenant_exam_stat: ['tenant_id', 'exam_id', 'number', 'pass_status'] (普通索引)
+  - idx_sys_user_exam_tenant_id: ['tenant_id'] (普通索引)
+  - idx_ue_user_exam: ['user_id', 'exam_id', 'number'] (普通索引)
+  - idx_user_exam_task: ['biz_type', 'biz_id', 'task_user_id', 'round_id', 'task_item_id', 'user_id'] (普通索引)
+
+表名: sys_user_exam_ai
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - course_id: BIGINT [注释: 课程ID]
+  - course_section_id: BIGINT [注释: 课程节ID]
+  - user_id: BIGINT [注释: 用户ID]
+  - exam_id: BIGINT [注释: 考试ID]
+  - paper_id: BIGINT [注释: 试卷ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - del_flag: CHAR(1) COLLATE "utf8mb4_general_ci" [注释: 删除标志（0代表存在 1代表删除）]
+索引信息:
+  - idx_course_section_user: ['course_id', 'course_section_id', 'user_id'] (普通索引)
+  - idx_exam_id: ['exam_id'] (普通索引)
+  - idx_user_id: ['user_id'] (普通索引)
+
+表名: sys_user_exam_bak_20260427
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - exam_id: BIGINT [注释: 考试id]
+  - user_id: BIGINT [注释: 用户id]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - dept_id: BIGINT [注释: 用户部门ID]
+  - course_id: BIGINT [注释: 课程id]
+  - biz_type: TINYINT [注释: 业务类型 1课程 2学习任务]
+  - task_id: BIGINT [注释: 学习任务ID]
+  - task_user_id: BIGINT [注释: 学习任务成员ID]
+  - round_id: BIGINT [注释: 学习任务轮次ID]
+  - task_item_id: BIGINT [注释: 任务节点ID]
+  - course_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 课程名称]
+  - exam_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 考试名称]
+  - paper_id: BIGINT [注释: 试卷id]
+  - paper_name: VARCHAR(50) COLLATE "utf8mb4_general_ci" [注释: 试卷名称]
+  - question_count: SMALLINT [注释: 试题总数]
+  - total_score: DOUBLE [注释: 试卷总分]
+  - score: DOUBLE [注释: 本次得分]
+  - duration: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 考试时长]
+  - exam_log_status: BIGINT [注释: 考试状态
+1 考试中
+2 阅卷中
+3 考试完成
+4 待考试
+5 待批阅
+6 批阅中
+7 异常提交
+8 缺考]
+  - number: BIGINT [注释: 次数]
+  - grading_method: TINYINT [注释: 1:自动阅卷,2:人工阅卷]
+  - pass_status: BIGINT [注释: 通过情况
+-2 未开始
+-1 枚举文案写的是“进行中”
+0 未通过
+1 通过
+2 待批阅]
+  - exam_time: DATETIME [注释: 考试时间]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - source_type: TINYINT [注释: 来源类型: 1=部门导入, 2=直接选择]
+  - student_status: TINYINT [注释: 学员状态（1正常 2已移除）]
+  - detail_pass_status: INTEGER [注释: 用于详情页展示的是否通过状态
+根据考试本身设置的通过条件，配合用户的考试记录得来，一旦通过不再回退
+0 未通过
+1 已通过]
+索引信息:
+  - idx_sys_user_exam_tenant_exam_stat: ['tenant_id', 'exam_id', 'number', 'pass_status'] (普通索引)
+  - idx_sys_user_exam_tenant_id: ['tenant_id'] (普通索引)
+  - idx_ue_user_exam: ['user_id', 'exam_id', 'number'] (普通索引)
+  - idx_user_exam_task: ['biz_type', 'task_id', 'task_user_id', 'round_id', 'task_item_id', 'user_id'] (普通索引)
+
+表名: sys_user_operation_log
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - user_id: BIGINT [注释: 用户id]
+  - module: VARCHAR(30) COLLATE "utf8mb4_general_ci" [注释: 模块]
+  - node: INTEGER [注释: 发送节点]
+  - content: VARCHAR(1000) COLLATE "utf8mb4_general_ci" [注释: 填充内容]
+  - create_time: DATETIME [注释: 创建时间]
+  - language: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 语种]
+  - dept_id: BIGINT [注释: 部门]
+  - operation_id: BIGINT [注释: 日报/任务Id]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_user_operation_log_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_user_post
+列信息:
+  - user_id: BIGINT (主键) [注释: 用户ID]
+  - post_id: BIGINT (主键) [注释: 岗位ID]
+索引信息:
+  - idx_sys_user_post_post_id: ['post_id'] (普通索引)
+  - idx_sys_user_post_user_id: ['user_id'] (普通索引)
+
+表名: sys_user_role
+列信息:
+  - user_id: BIGINT (主键) [注释: 用户ID]
+  - role_id: BIGINT (主键) [注释: 角色ID]
+
+表名: sys_video_file_mapping
+列信息:
+  - id: BIGINT (主键) [注释: 主键ID]
+  - video_id: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 视频ID]
+  - file_id: VARCHAR(64) COLLATE "utf8mb4_general_ci" [注释: 文件-ID]
+  - ppt_page: INTEGER [注释: 对应文件页码]
+  - video_start_time: DECIMAL(10, 4) [注释: 视频开始时间点（秒）]
+  - video_end_time: DECIMAL(10, 4) [注释: 视频结束时间点（秒）]
+  - create_by: BIGINT [注释: 创建者ID]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者ID]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门ID]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_sys_video_file_mapping_tenant_id: ['tenant_id'] (普通索引)
+
+表名: sys_vod_callback_log
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - vod_video_id: VARCHAR(64) [注释: VOD平台视频ID]
+  - event_type: VARCHAR(64) [注释: 回调事件类型]
+  - payload_json: JSON [注释: 回调载荷JSON]
+  - signature_valid: CHAR(1) [注释: 签名是否有效（0无效 1有效）]
+  - received_at: DATETIME [注释: 回调接收时间]
+  - del_flag: CHAR(1) [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_event_type: ['event_type'] (普通索引)
+  - idx_tenant_id: ['tenant_id'] (普通索引)
+  - idx_vod_video_id: ['vod_video_id'] (普通索引)
+
+表名: sys_vod_video
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) [注释: 租户编号]
+  - file_name: VARCHAR(255) [注释: 文件名称]
+  - file_size: BIGINT [注释: 文件大小（字节）]
+  - status: CHAR(1) [注释: 视频状态（0上传中 1处理中 2就绪 3失败）]
+  - vod_video_id: VARCHAR(64) [注释: VOD平台视频ID]
+  - duration: BIGINT [注释: 视频时长（秒）]
+  - upload_time: DATETIME [注释: 上传时间]
+  - del_flag: CHAR(1) [注释: 删除标志（0代表存在 1代表删除）]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_create_time: ['create_time'] (普通索引)
+  - idx_status: ['status'] (普通索引)
+  - idx_tenant_id: ['tenant_id'] (普通索引)
+
+表名: task_study
+列信息:
+  - id: BIGINT (主键) [注释: 学习任务id]
+  - dept_id: BIGINT [注释: 学习任务所属部门部门Id]
+  - study_status: TINYINT [注释: 任务状态（0 草稿 1启用）]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_task_study_tenant_id: ['tenant_id'] (普通索引)
+
+表名: task_study_list
+列信息:
+  - id: BIGINT (主键) [注释: 学习任务列表id]
+  - post_id: BIGINT [注释: 岗位Id]
+  - parent_id: BIGINT [注释: 父（学习任务）Id]
+  - start_delay_days: INTEGER [注释: 加入计划后延迟开始天数]
+  - duration_days: INTEGER [注释: 学习期限天数]
+  - allow_after_deadline: TINYINT [注释: 超过截止时间是否允许继续学习(0:不允许 1:允许)]
+  - notify_on_start: TINYINT [注释: 阶段开始时是否通知学员(0:否 1:是)]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_task_study_list_post_id: ['post_id'] (普通索引)
+  - idx_task_study_list_tenant_id: ['tenant_id'] (普通索引)
+
+表名: task_study_list_course
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - study_list_id: BIGINT [注释: 任务列表Id]
+  - course_id: BIGINT [注释: 课程Id]
+索引信息:
+  - idx_task_study_list_course_list_id: ['study_list_id'] (普通索引)
+
+表名: task_work
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - task_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 任务名称]
+  - supervisor: BIGINT [注释: 负责人]
+  - start_time: DATE [注释: 任务开始时间]
+  - end_time: DATE [注释: 任务结束时间]
+  - task_status: TINYINT [注释: 任务状态 0 草稿 1进行中 2 已完成]
+  - long_term: TINYINT [注释: 是否长期 0 否 1是]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_task_work_tenant_id: ['tenant_id'] (普通索引)
+
+表名: task_work_children
+列信息:
+  - id: BIGINT (主键) [注释: 子任务id]
+  - parent_id: BIGINT [注释: 工作任务Id]
+  - children_name: VARCHAR(60) COLLATE "utf8mb4_general_ci" [注释: 子任务名称]
+  - description: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 子任务描述]
+  - start_time: DATE [注释: 开始时间]
+  - end_time: DATE [注释: 时间结束]
+  - progress: INTEGER [注释: 进度]
+  - children_status: TINYINT [注释: 子任务状态 0待开始 1进行中 2已完成]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+  - create_dept: BIGINT [注释: 创建部门]
+  - long_term: TINYINT [注释: 是否长期 0 否 1是]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+索引信息:
+  - idx_task_work_children_tenant_id: ['tenant_id'] (普通索引)
+
+表名: task_work_children_user
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - children_task_id: BIGINT [注释: 子任务id]
+  - user_id: BIGINT [注释: userid]
+
+表名: task_work_dept
+列信息:
+  - id: BIGINT (主键) [注释: None]
+  - task_work_id: BIGINT [注释: None]
+  - dept_id: BIGINT [注释: None]
+
+表名: test_demo
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - dept_id: BIGINT [注释: 部门id]
+  - user_id: BIGINT [注释: 用户id]
+  - order_num: INTEGER [注释: 排序号]
+  - test_key: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: key键]
+  - value: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 值]
+  - version: INTEGER [注释: 版本]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_time: DATETIME [注释: 创建时间]
+  - create_by: BIGINT [注释: 创建人]
+  - update_time: DATETIME [注释: 更新时间]
+  - update_by: BIGINT [注释: 更新人]
+  - del_flag: INTEGER [注释: 删除标志]
+
+表名: test_leave
+列信息:
+  - id: BIGINT (主键) [注释: id]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - leave_type: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 请假类型]
+  - start_date: DATETIME [注释: 开始时间]
+  - end_date: DATETIME [注释: 结束时间]
+  - leave_days: INTEGER [注释: 请假天数]
+  - remark: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 请假原因]
+  - status: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 状态]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_by: BIGINT [注释: 创建者]
+  - create_time: DATETIME [注释: 创建时间]
+  - update_by: BIGINT [注释: 更新者]
+  - update_time: DATETIME [注释: 更新时间]
+索引信息:
+  - idx_test_leave_tenant_id: ['tenant_id'] (普通索引)
+
+表名: test_tree
+列信息:
+  - id: BIGINT (主键) [注释: 主键]
+  - tenant_id: VARCHAR(20) COLLATE "utf8mb4_general_ci" [注释: 租户编号]
+  - parent_id: BIGINT [注释: 父id]
+  - dept_id: BIGINT [注释: 部门id]
+  - user_id: BIGINT [注释: 用户id]
+  - tree_name: VARCHAR(255) COLLATE "utf8mb4_general_ci" [注释: 值]
+  - version: INTEGER [注释: 版本]
+  - create_dept: BIGINT [注释: 创建部门]
+  - create_time: DATETIME [注释: 创建时间]
+  - create_by: BIGINT [注释: 创建人]
+  - update_time: DATETIME [注释: 更新时间]
+  - update_by: BIGINT [注释: 更新人]
+  - del_flag: INTEGER [注释: 删除标志]
+
+20260522 14:43:33 - MainProcess | MainThread | db_utils.<module>:237 - INFO - SQL验证结果: SQL查询语法看起来正确
+20260522 14:43:33 - MainProcess | MainThread | db_utils.execute_query:173 - ERROR - (pymysql.err.ProgrammingError) (1146, "Table 'lms.users' doesn't exist")
+[SQL: SELECT * FROM users LIMIT 5]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    │    │       └ <function DefaultDialect.do_execute at 0x00000265A772B880>
+    │    └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x00000265A63C4980>
+    └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    │      │       │          └ {}
+    │      │       └ 'SELECT * FROM users LIMIT 5'
+    │      └ <function Cursor.execute at 0x00000265A799F880>
+    └ <pymysql.cursors.Cursor object at 0x00000265A7916BD0>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+             │    │      └ 'SELECT * FROM users LIMIT 5'
+             │    └ <function Cursor._query at 0x00000265A799FD80>
+             └ <pymysql.cursors.Cursor object at 0x00000265A7916BD0>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    │    │     └ 'SELECT * FROM users LIMIT 5'
+    │    └ <function Connection.query at 0x00000265A79D31A0>
+    └ <pymysql.connections.Connection object at 0x00000265A77E4350>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+    │    │                │    │                             └ False
+    │    │                │    └ <function Connection._read_query_result at 0x00000265A79D3920>
+    │    │                └ <pymysql.connections.Connection object at 0x00000265A77E4350>
+    │    └ 1
+    └ <pymysql.connections.Connection object at 0x00000265A77E4350>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    │      └ <function MySQLResult.read at 0x00000265A79D8220>
+    └ <pymysql.connections.MySQLResult object at 0x00000265A7917200>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+                   │    └ None
+                   └ <pymysql.connections.MySQLResult object at 0x00000265A7917200>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    │      └ <function MysqlPacket.raise_for_error at 0x00000265A79D1940>
+    └ <pymysql.protocol.MysqlPacket object at 0x00000265A79CE3B0>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    │   │                     │    └ <member '_data' of 'MysqlPacket' objects>
+    │   │                     └ <pymysql.protocol.MysqlPacket object at 0x00000265A79CE3B0>
+    │   └ <function raise_mysql_exception at 0x00000265A788E3E0>
+    └ <module 'pymysql.err' from 'D:\\PycharmProjects\\my_lc_v1\\Lib\\site-packages\\pymysql\\err.py'>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+          │          │      │                └ '42S02'
+          │          │      └ "Table 'lms.users' doesn't exist"
+          │          └ 1146
+          └ <class 'pymysql.err.ProgrammingError'>
+
+pymysql.err.ProgrammingError: (1146, "Table 'lms.users' doesn't exist")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "D:\d\PycharmProjects\langchain_V1_3\src\agent\tools\utils\db_utils.py", line 240, in <module>
+    query_result = manager.execute_query(test_sql)
+                   │       │             └ 'SELECT * FROM users LIMIT 5'
+                   │       └ <function MySQLDatabaseManager.execute_query at 0x00000265A77C71A0>
+                   └ <__main__.MySQLDatabaseManager object at 0x00000265A65A9D60>
+
+> File "D:\d\PycharmProjects\langchain_V1_3\src\agent\tools\utils\db_utils.py", line 135, in execute_query
+    result = connection.execute(text(query))
+             │          │       │    └ 'SELECT * FROM users LIMIT 5'
+             │          │       └ <function text at 0x00000265A7619DA0>
+             │          └ <function Connection.execute at 0x00000265A7698860>
+             └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+           └ <bound method ClauseElement._execute_on_connection of <sqlalchemy.sql.elements.TextClause object at 0x00000265A79A2450>>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           │          └ <function Connection._execute_clauseelement at 0x00000265A7698B80>
+           └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          │    └ <function Connection._execute_context at 0x00000265A7698D60>
+          └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           │    └ <function Connection._exec_single_context at 0x00000265A7698E00>
+           └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    │    └ <function Connection._handle_dbapi_exception at 0x00000265A7699080>
+    └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+          │                    │              │                 └ ProgrammingError(1146, "Table 'lms.users' doesn't exist")
+          │                    │              └ (<class 'pymysql.err.ProgrammingError'>, ProgrammingError(1146, "Table 'lms.users' doesn't exist"), <traceback object at 0x00...
+          │                    └ <method 'with_traceback' of 'BaseException' objects>
+          └ ProgrammingError('(pymysql.err.ProgrammingError) (1146, "Table \'lms.users\' doesn\'t exist")')
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    │    │       └ <function DefaultDialect.do_execute at 0x00000265A772B880>
+    │    └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x00000265A63C4980>
+    └ <sqlalchemy.engine.base.Connection object at 0x00000265A4AC1730>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    │      │       │          └ {}
+    │      │       └ 'SELECT * FROM users LIMIT 5'
+    │      └ <function Cursor.execute at 0x00000265A799F880>
+    └ <pymysql.cursors.Cursor object at 0x00000265A7916BD0>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\cursors.py", line 159, in execute
+    result = self._query(query)
+             │    │      └ 'SELECT * FROM users LIMIT 5'
+             │    └ <function Cursor._query at 0x00000265A799FD80>
+             └ <pymysql.cursors.Cursor object at 0x00000265A7916BD0>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\cursors.py", line 330, in _query
+    conn.query(q)
+    │    │     └ 'SELECT * FROM users LIMIT 5'
+    │    └ <function Connection.query at 0x00000265A79D31A0>
+    └ <pymysql.connections.Connection object at 0x00000265A77E4350>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 582, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+    │    │                │    │                             └ False
+    │    │                │    └ <function Connection._read_query_result at 0x00000265A79D3920>
+    │    │                └ <pymysql.connections.Connection object at 0x00000265A77E4350>
+    │    └ 1
+    └ <pymysql.connections.Connection object at 0x00000265A77E4350>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 847, in _read_query_result
+    result.read()
+    │      └ <function MySQLResult.read at 0x00000265A79D8220>
+    └ <pymysql.connections.MySQLResult object at 0x00000265A7917200>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 1245, in read
+    first_packet = self.connection._read_packet()
+                   │    └ None
+                   └ <pymysql.connections.MySQLResult object at 0x00000265A7917200>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\connections.py", line 803, in _read_packet
+    packet.raise_for_error()
+    │      └ <function MysqlPacket.raise_for_error at 0x00000265A79D1940>
+    └ <pymysql.protocol.MysqlPacket object at 0x00000265A79CE3B0>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    │   │                     │    └ <member '_data' of 'MysqlPacket' objects>
+    │   │                     └ <pymysql.protocol.MysqlPacket object at 0x00000265A79CE3B0>
+    │   └ <function raise_mysql_exception at 0x00000265A788E3E0>
+    └ <module 'pymysql.err' from 'D:\\PycharmProjects\\my_lc_v1\\Lib\\site-packages\\pymysql\\err.py'>
+  File "D:\PycharmProjects\my_lc_v1\Lib\site-packages\pymysql\err.py", line 154, in raise_mysql_exception
+    raise errorclass(errno, errval, sqlstate=sqlstate)
+          │          │      │                └ '42S02'
+          │          │      └ "Table 'lms.users' doesn't exist"
+          │          └ 1146
+          └ <class 'pymysql.err.ProgrammingError'>
+
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'lms.users' doesn't exist")
+[SQL: SELECT * FROM users LIMIT 5]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+20260522 14:48:36 - MainProcess | MainThread | db_utils.<module>:237 - INFO - SQL验证结果: SQL查询语法看起来正确
+20260522 14:48:36 - MainProcess | MainThread | db_utils.<module>:241 - INFO - 查询结果:
+| id | tenant_id | training_name | dept_id | instance_id | training_type | student_tags | customer_tags | question_count | valid_days | task_count | completion_standard | info_config_type | is_shared | allow_expired_training | status | publish_time | del_flag | create_dept | create_by | create_time | update_by | update_time | customer_instance_ai | customer_instance_manual | min_stage_code | stage |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2052220811769630721 | 2056559790648635393 | trainingName_51bcf49bf913 | 2031612921967509505 | None | 2 | {"task_goal": "goal_intermediate", "weakness_tag": ["product_intro", "demand_mining", "price_negotiation"], "position_role": "wzf_customer_manager", "experience_level": "beginner"} | {"industry": "finance", "core_focus": "product_features", "training_scene": "first_contact", "cooperation_stage": "initial_contact", "customer_category": "new_customer", "price_sensitivity": "high"} | -1 | -1 | -1 | 1 | 1 | 0 | 1 | 2 | 2026-05-07T10:55:45 | 0 | 2031612921967509505 | 2028676899302440962 | 2026-05-07T10:55:45 | 2028676899302440962 | 2026-05-07T10:55:45 | customerInstanceAi_6a522b8d45e3 | customerInstanceManual_ed8f30691ea7 | None | None |
+| 2052223925864189954 | 0 | trainingName_51bcf49bf913 | 2031612921967509505 | None | 2 | {"task_goal": "goal_intermediate", "weakness_tag": ["product_intro", "demand_mining", "price_negotiation"], "position_role": "wzf_customer_manager", "experience_level": "beginner"} | {"industry": "finance", "core_focus": "product_features", "training_scene": "first_contact", "cooperation_stage": "initial_contact", "customer_category": "new_customer", "price_sensitivity": "high"} | -1 | -1 | -1 | 1 | 1 | 0 | 1 | 2 | 2026-05-07T11:08:07 | 0 | 2031612921967509505 | 2028676899302440962 | 2026-05-07T11:08:07 | 2028676899302440962 | 2026-05-07T11:08:07 | customerInstanceAi_6a522b8d45e3 | customerInstanceManual_ed8f30691ea7 | None | None |
+| 2052265057327259650 | 0 | trainingName_51bcf49bf913 | 2031612921967509505 | None | 2 | {"task_goal": "goal_intermediate", "weakness_tag": ["product_intro", "demand_mining", "price_negotiation"], "position_role": "wzf_customer_manager", "experience_level": "beginner"} | {"industry": "finance", "core_focus": "product_features", "training_scene": "first_contact", "cooperation_stage": "initial_contact", "customer_category": "new_customer", "price_sensitivity": "high"} | -1 | -1 | -1 | 1 | 1 | 0 | 1 | 2 | 2026-05-07T13:51:34 | 0 | 2031612921967509505 | 2028676899302440962 | 2026-05-07T13:51:34 | 2028676899302440962 | 2026-05-07T13:51:34 | customerInstanceAi_6a522b8d45e3 | customerInstanceManual_ed8f30691ea7 | None | None |
+| 2052265423292911618 | 0 | trainingName_51bcf49bf913 | 2031612921967509505 | None | 2 | {"task_goal": "goal_intermediate", "weakness_tag": ["product_intro", "demand_mining", "price_negotiation"], "position_role": "wzf_customer_manager", "experience_level": "beginner"} | {"industry": "finance", "core_focus": "product_features", "training_scene": "first_contact", "cooperation_stage": "initial_contact", "customer_category": "new_customer", "price_sensitivity": "high"} | -1 | -1 | -1 | 1 | 1 | 0 | 1 | 2 | 2026-05-07T13:52:56 | 0 | 2031612921967509505 | 2028676899302440962 | 2026-05-07T13:53:01 | 2028676899302440962 | 2026-05-07T13:53:01 | customerInstanceAi_6a522b8d45e3 | customerInstanceManual_ed8f30691ea7 | None | None |
+| 2052577114532114434 | 0 | 客户沟通技巧训练5 | 100 | None | 1 | {"task_goal": "goal_intermediate", "weakness_tag": ["product_intro", "demand_mining", "price_negotiation"], "position_role": "wzf_customer_manager", "experience_level": "beginner"} | {"industry": "finance", "core_focus": "product_features", "training_scene": "first_contact", "cooperation_stage": "initial_contact", "customer_category": "new_customer", "price_sensitivity": "high"} | 10 | 7 | 3 | 1 | 1 | 1 | 1 | 2 | 2026-05-08T10:39:12 | 0 | 100 | 1 | 2026-05-08T10:31:34 | 1 | 2026-05-08T13:26:28 | 您是一位对产品不太了解的潜在客户... | 您是一位对产品不太了解的潜在客户（已优化）... | PROBATION | None |
+
+20260522 15:13:48 - MainProcess | MainThread | db_utils.<module>:224 - INFO - 数据库中的表名: ['ai_conversation_record', 'ai_report_conversation', 'ai_simulation_training', 'ai_simulation_training_history', 'ai_simulation_training_scope_dept', 'ai_simulation_training_scope_user', 'ai_simulation_training_session', 'ai_simulation_training_share_dept', 'ai_simulation_training_share_user', 'ai_simulation_training_user', 'ai_simulation_training_user_history', 'ai_training_report', 'beisen_event_callback_record', 'beisen_raw_employee', 'beisen_raw_job_post', 'beisen_raw_organization', 'exam_badge', 'exam_info', 'exam_log', 'exam_log_ai_review', 'exam_log_record', 'exam_manual_grading', 'exam_marking_fail_log', 'exam_paper', 'exam_paper_json', 'exam_paper_json_bak_250729', 'exam_paper_random_count', 'exam_paper_random_count_bak_250729', 'exam_paper_share_dept', 'exam_paper_share_user', 'exam_paper_snapshot', 'flow_category', 'flow_definition', 'flow_his_task', 'flow_instance', 'flow_node', 'flow_skip', 'flow_task', 'flow_user', 'gen_table', 'gen_table_column', 'question_bank_dept', 'question_bank_info', 'question_bank_share_dept', 'question_bank_share_user', 'question_info', 'question_ref_index', 'question_ref_sync_state', 'report_record', 'report_record_recipient', 'report_rules', 'report_rules_dept', 'report_rules_user', 'report_template', 'report_template_title', 'sop_info', 'sop_info_dept', 'sop_info_task', 'sop_info_user', 'sop_manage', 'sop_task', 'sop_task_push_records', 'sop_work_report_info', 'sop_work_report_item_info', 'sop_work_report_person_relevancy', 'study_simulation_record', 'study_task', 'study_task_ref_course', 'study_task_scope_dept', 'study_task_scope_user', 'study_task_stage_ref_course', 'study_task_stage_user_instance', 'study_task_user', 'study_task_user_round', 'sys_client', 'sys_config', 'sys_course', 'sys_course_dept', 'sys_course_section', 'sys_course_share_dept', 'sys_course_share_user', 'sys_course_stage', 'sys_course_stage_process', 'sys_course_stage_process_reviewer', 'sys_course_stage_user_instance', 'sys_courseware', 'sys_courseware_category', 'sys_courseware_library', 'sys_courseware_library_copy', 'sys_courseware_library_share_dept', 'sys_courseware_library_share_user', 'sys_dept', 'sys_dict_data', 'sys_dict_data_lang', 'sys_dict_type', 'sys_dict_type_lang', 'sys_exam_dept', 'sys_homework', 'sys_homework_record', 'sys_lang', 'sys_logininfor', 'sys_menu', 'sys_menu_lang', 'sys_message_notification', 'sys_message_record', 'sys_message_template', 'sys_notice', 'sys_notice_user_status', 'sys_oper_log', 'sys_oss', 'sys_oss_config', 'sys_post', 'sys_role', 'sys_role_dept', 'sys_role_menu', 'sys_scene_task', 'sys_social', 'sys_tenant', 'sys_tenant_package', 'sys_user', 'sys_user_badge', 'sys_user_course', 'sys_user_course_section', 'sys_user_courseware', 'sys_user_exam', 'sys_user_exam_ai', 'sys_user_exam_bak_20260427', 'sys_user_operation_log', 'sys_user_post', 'sys_user_role', 'sys_video_file_mapping', 'sys_vod_callback_log', 'sys_vod_video', 'task_study', 'task_study_list', 'task_study_list_course', 'task_work', 'task_work_children', 'task_work_children_user', 'task_work_dept', 'test_demo', 'test_leave', 'test_tree']
+20260522 15:13:48 - MainProcess | MainThread | db_utils.<module>:228 - INFO - 数据库表信息: [{'table_name': 'ai_conversation_record', 'table_comment': 'AI对话记录表'}, {'table_name': 'ai_report_conversation', 'table_comment': 'AI报告对话快照表'}, {'table_name': 'ai_simulation_training', 'table_comment': 'AI模拟对话训练主表'}, {'table_name': 'ai_simulation_training_history', 'table_comment': 'AI模拟对话训练变更历史表'}, {'table_name': 'ai_simulation_training_scope_dept', 'table_comment': 'AI模拟对话训练适用部门表'}, {'table_name': 'ai_simulation_training_scope_user', 'table_comment': 'AI模拟对话训练适用人员表'}, {'table_name': 'ai_simulation_training_session', 'table_comment': 'AI模拟对话训练会话表'}, {'table_name': 'ai_simulation_training_share_dept', 'table_comment': 'AI模拟对话训练共享部门表'}, {'table_name': 'ai_simulation_training_share_user', 'table_comment': 'AI模拟对话训练共享人员表'}, {'table_name': 'ai_simulation_training_user', 'table_comment': 'AI模拟对话训练成员表'}, {'table_name': 'ai_simulation_training_user_history', 'table_comment': 'AI模拟对话训练成员快照历史表'}, {'table_name': 'ai_training_report', 'table_comment': 'AI训练报告表'}, {'table_name': 'beisen_event_callback_record', 'table_comment': '北森事件回调记录表'}, {'table_name': 'beisen_raw_employee', 'table_comment': '北森员工原始数据表'}, {'table_name': 'beisen_raw_job_post', 'table_comment': '岗位表'}, {'table_name': 'beisen_raw_organization', 'table_comment': '北森组织原始数据表'}, {'table_name': 'exam_badge', 'table_comment': '考试徽章'}, {'table_name': 'exam_info', 'table_comment': '考试'}, {'table_name': 'exam_log', 'table_comment': '考试记录'}, {'table_name': 'exam_log_ai_review', 'table_comment': 'AI评审考试记录结果'}, {'table_name': 'exam_log_record', 'table_comment': '考试记录'}, {'table_name': 'exam_manual_grading', 'table_comment': '考试_人工阅卷'}, {'table_name': 'exam_marking_fail_log', 'table_comment': '阅卷失败重试记录表'}, {'table_name': 'exam_paper', 'table_comment': '试卷'}, {'table_name': 'exam_paper_json', 'table_comment': '试卷JSON'}, {'table_name': 'exam_paper_json_bak_250729', 'table_comment': '试卷JSON'}, {'table_name': 'exam_paper_random_count', 'table_comment': '随机组卷试题数量'}, {'table_name': 'exam_paper_random_count_bak_250729', 'table_comment': '随机组卷试题数量'}, {'table_name': 'exam_paper_share_dept', 'table_comment': '试卷共享部门关联表'}, {'table_name': 'exam_paper_share_user', 'table_comment': '试卷共享人员关联表'}, {'table_name': 'exam_paper_snapshot', 'table_comment': '人工组卷考试-试卷快照'}, {'table_name': 'flow_category', 'table_comment': '流程分类'}, {'table_name': 'flow_definition', 'table_comment': '流程定义表'}, {'table_name': 'flow_his_task', 'table_comment': '历史任务记录表'}, {'table_name': 'flow_instance', 'table_comment': '流程实例表'}, {'table_name': 'flow_node', 'table_comment': '流程节点表'}, {'table_name': 'flow_skip', 'table_comment': '节点跳转关联表'}, {'table_name': 'flow_task', 'table_comment': '待办任务表'}, {'table_name': 'flow_user', 'table_comment': '流程用户表'}, {'table_name': 'gen_table', 'table_comment': '代码生成业务表'}, {'table_name': 'gen_table_column', 'table_comment': '代码生成业务表字段'}, {'table_name': 'question_bank_dept', 'table_comment': '题库关联部门'}, {'table_name': 'question_bank_info', 'table_comment': '题库管理表'}, {'table_name': 'question_bank_share_dept', 'table_comment': '题库共享部门表'}, {'table_name': 'question_bank_share_user', 'table_comment': '题库共享人员表'}, {'table_name': 'question_info', 'table_comment': '试题管理表'}, {'table_name': 'question_ref_index', 'table_comment': '题目引用索引'}, {'table_name': 'question_ref_sync_state', 'table_comment': '题目引用索引-历史补齐状态'}, {'table_name': 'report_record', 'table_comment': '周日报汇报记录'}, {'table_name': 'report_record_recipient', 'table_comment': '汇报记录发送到人'}, {'table_name': 'report_rules', 'table_comment': '周日报汇报规则'}, {'table_name': 'report_rules_dept', 'table_comment': '规则关联部门'}, {'table_name': 'report_rules_user', 'table_comment': '规则关联人员'}, {'table_name': 'report_template', 'table_comment': '部门周日报模板'}, {'table_name': 'report_template_title', 'table_comment': '周日报模板标题'}, {'table_name': 'sop_info', 'table_comment': '任务管理'}, {'table_name': 'sop_info_dept', 'table_comment': 'SOP与部门关联表'}, {'table_name': 'sop_info_task', 'table_comment': 'SOP与任务关联表'}, {'table_name': 'sop_info_user', 'table_comment': 'SOP与用户关联表'}, {'table_name': 'sop_manage', 'table_comment': 'sop管理'}, {'table_name': 'sop_task', 'table_comment': '任务表'}, {'table_name': 'sop_task_push_records', 'table_comment': 'SOP任务推送记录表'}, {'table_name': 'sop_work_report_info', 'table_comment': '工作报告信息表'}, {'table_name': 'sop_work_report_item_info', 'table_comment': '工作报告任务表'}, {'table_name': 'sop_work_report_person_relevancy', 'table_comment': '工作报告发送人关联表'}, {'table_name': 'study_simulation_record', 'table_comment': '场景模拟记录表'}, {'table_name': 'study_task', 'table_comment': '学习任务主表'}, {'table_name': 'study_task_ref_course', 'table_comment': '学习任务引用课程关系表'}, {'table_name': 'study_task_scope_dept', 'table_comment': '学习任务适用部门'}, {'table_name': 'study_task_scope_user', 'table_comment': '学习任务适用人员'}, {'table_name': 'study_task_stage_ref_course', 'table_comment': '学习任务阶段引用课程关系表'}, {'table_name': 'study_task_stage_user_instance', 'table_comment': '学习任务阶段实例表'}, {'table_name': 'study_task_user', 'table_comment': '学习任务成员表'}, {'table_name': 'study_task_user_round', 'table_comment': '学习任务轮次表'}, {'table_name': 'sys_client', 'table_comment': '系统授权表'}, {'table_name': 'sys_config', 'table_comment': '参数配置表'}, {'table_name': 'sys_course', 'table_comment': '课程表'}, {'table_name': 'sys_course_dept', 'table_comment': '课程部门表'}, {'table_name': 'sys_course_section', 'table_comment': '课程节数表'}, {'table_name': 'sys_course_share_dept', 'table_comment': '课程共享部门'}, {'table_name': 'sys_course_share_user', 'table_comment': '课程共享人员'}, {'table_name': 'sys_course_stage', 'table_comment': '课程阶段表'}, {'table_name': 'sys_course_stage_process', 'table_comment': '课程阶段过程关联表'}, {'table_name': 'sys_course_stage_process_reviewer', 'table_comment': '课程阶段过程指定复核人表'}, {'table_name': 'sys_course_stage_user_instance', 'table_comment': '用户课程阶段实例信息表'}, {'table_name': 'sys_courseware', 'table_comment': '课件表'}, {'table_name': 'sys_courseware_category', 'table_comment': '课件分类'}, {'table_name': 'sys_courseware_library', 'table_comment': '课件库表'}, {'table_name': 'sys_courseware_library_copy', 'table_comment': '课件库表'}, {'table_name': 'sys_courseware_library_share_dept', 'table_comment': '课件库共享部门'}, {'table_name': 'sys_courseware_library_share_user', 'table_comment': '课件库共享人员'}, {'table_name': 'sys_dept', 'table_comment': '部门表'}, {'table_name': 'sys_dict_data', 'table_comment': '字典数据表'}, {'table_name': 'sys_dict_data_lang', 'table_comment': '字典数据语言表'}, {'table_name': 'sys_dict_type', 'table_comment': '字典类型表'}, {'table_name': 'sys_dict_type_lang', 'table_comment': '字典类型语言表'}, {'table_name': 'sys_exam_dept', 'table_comment': '考试部门表'}, {'table_name': 'sys_homework', 'table_comment': '作业表'}, {'table_name': 'sys_homework_record', 'table_comment': '作业-交付记录表'}, {'table_name': 'sys_lang', 'table_comment': '语言表'}, {'table_name': 'sys_logininfor', 'table_comment': '系统访问记录'}, {'table_name': 'sys_menu', 'table_comment': '菜单权限表'}, {'table_name': 'sys_menu_lang', 'table_comment': '系统菜单-国际化表'}, {'table_name': 'sys_message_notification', 'table_comment': '消息通知表'}, {'table_name': 'sys_message_record', 'table_comment': '站内信通知记录'}, {'table_name': 'sys_message_template', 'table_comment': '站内信模板'}, {'table_name': 'sys_notice', 'table_comment': '通知公告表'}, {'table_name': 'sys_notice_user_status', 'table_comment': '用户公告状态'}, {'table_name': 'sys_oper_log', 'table_comment': '操作日志记录'}, {'table_name': 'sys_oss', 'table_comment': 'OSS对象存储表'}, {'table_name': 'sys_oss_config', 'table_comment': '对象存储配置表'}, {'table_name': 'sys_post', 'table_comment': '岗位信息表'}, {'table_name': 'sys_role', 'table_comment': '角色信息表'}, {'table_name': 'sys_role_dept', 'table_comment': '角色和部门关联表'}, {'table_name': 'sys_role_menu', 'table_comment': '角色和菜单关联表'}, {'table_name': 'sys_scene_task', 'table_comment': '场景任务表'}, {'table_name': 'sys_social', 'table_comment': '社会化关系表'}, {'table_name': 'sys_tenant', 'table_comment': '租户表'}, {'table_name': 'sys_tenant_package', 'table_comment': '租户套餐表'}, {'table_name': 'sys_user', 'table_comment': '用户信息表'}, {'table_name': 'sys_user_badge', 'table_comment': '用户徽章表'}, {'table_name': 'sys_user_course', 'table_comment': '用户关联课程'}, {'table_name': 'sys_user_course_section', 'table_comment': '用户关联课程章节表'}, {'table_name': 'sys_user_courseware', 'table_comment': '用户课件学习进度'}, {'table_name': 'sys_user_exam', 'table_comment': '用户关联考试'}, {'table_name': 'sys_user_exam_ai', 'table_comment': '课程节用户考试关联表'}, {'table_name': 'sys_user_exam_bak_20260427', 'table_comment': '用户关联考试'}, {'table_name': 'sys_user_operation_log', 'table_comment': '用户操作日志'}, {'table_name': 'sys_user_post', 'table_comment': '用户与岗位关联表'}, {'table_name': 'sys_user_role', 'table_comment': '用户和角色关联表'}, {'table_name': 'sys_video_file_mapping', 'table_comment': '视频-PPT时间轴映射表'}, {'table_name': 'sys_vod_callback_log', 'table_comment': 'VOD回调日志表'}, {'table_name': 'sys_vod_video', 'table_comment': '视频信息表'}, {'table_name': 'task_study', 'table_comment': '学习任务'}, {'table_name': 'task_study_list', 'table_comment': '学习任务列表'}, {'table_name': 'task_study_list_course', 'table_comment': '任务列表关联课程'}, {'table_name': 'task_work', 'table_comment': '工作任务'}, {'table_name': 'task_work_children', 'table_comment': '工作任务详情（子任务）'}, {'table_name': 'task_work_children_user', 'table_comment': '子任务关联成员'}, {'table_name': 'task_work_dept', 'table_comment': '工作任务归属部门'}, {'table_name': 'test_demo', 'table_comment': '测试单表'}, {'table_name': 'test_leave', 'table_comment': '请假申请表'}, {'table_name': 'test_tree', 'table_comment': '测试树表'}]
