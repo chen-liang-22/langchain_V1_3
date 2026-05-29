@@ -4,7 +4,8 @@
     "agent": "./src/agent/llm/my_agent.py:agent",
     "eamil": "./src/agent/llm/my_agent_mail.py:email",
     "sql": "./src/agent/llm/sql.py:sql",
-    "dev": "./src/agent/llm/dev_agent.py:dev"
+    "dev": "./src/agent/llm/dev_agent.py:dev",
+    "rag": "./src/agent/llm/rag_agent.py:rag"
   },
   "env": ".env"
 }

@@ -7,6 +7,19 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_core.documents import Document
 
 from src.agent.RAG.knowledge.qdrant_store import QdrantStore
+from src.agent.my_llm import llm
+
+# 生成文档摘要的提示词
+SUMMARY_PROMPT = """请对以下文档内容生成结构化摘要，包含：
+1. 文档主题
+2. 目录结构（列出所有章节/段落标题）
+3. 各章节核心内容概要（每章1-2句话）
+4. 文档总体信息（页数、关键词等）
+
+请用中文回答，保持简洁。
+
+文档内容：
+{content}"""
 
 
 class KnowledgeBase:
@@ -71,9 +84,10 @@ class KnowledgeBase:
         1. 对文件字节内容计算MD5
         2. 校验MD5是否已存在，重复则跳过
         3. 根据文件后缀选择加载方式（PDF用PyPDFLoader，其他按文本处理）
-        4. 判断是否需要分割：任一文档块超过chunk_size则触发分割
-        5. 将文档写入Qdrant向量库
-        6. 记录MD5到文件，标记为已上传
+        4. 生成文档摘要，作为 type=summary 的 Document 存入向量库
+        5. 判断是否需要分割：任一文档块超过chunk_size则触发分割
+        6. 将分块文档写入Qdrant向量库（type=chunk）
+        7. 记录MD5到文件，标记为已上传
         :param file_bytes: 文件的原始字节内容
         :param file_name: 文件名（用于判断文件类型）
         :return: 处理结果描述信息
@@ -95,24 +109,90 @@ class KnowledgeBase:
         if not documents:
             return f"文件 '{file_name}' 内容为空，跳过上传"
 
-        # 4. 判断是否需要分割：遍历所有文档块，任一超过chunk_size就分割
+        # 过滤掉空内容的文档块（PDF某些页可能提取不到文字）
+        documents = [doc for doc in documents if doc.page_content.strip()]
+
+        if not documents:
+            return f"文件 '{file_name}' 提取不到有效文本内容，跳过上传"
+
+        # 4. 生成文档摘要并存入向量库（用于回答全局性问题）
+        self._generate_and_store_summary(documents, file_name)
+
+        # 5. 判断是否需要分割：遍历所有文档块，任一超过chunk_size就分割
         chunk_size = self.qdrant_store.text_splitter._chunk_size
         need_split = any(len(doc.page_content) > chunk_size for doc in documents)
 
         if need_split:
-            # 使用RecursiveCharacterTextSplitter按自然段落优先分割
             documents = self.qdrant_store.text_splitter.split_documents(documents)
 
-        # 5. 写入向量库，每个文档块生成唯一ID
+        # 再次过滤分割后可能产生的空块
+        documents = [doc for doc in documents if doc.page_content.strip()]
+
+        # 6. 为每个分块添加 metadata 标记类型和来源
+        for doc in documents:
+            doc.metadata["type"] = "chunk"
+            doc.metadata["source"] = file_name
+
+        # 写入向量库，每个文档块生成唯一ID
         self.qdrant_store.vector_store.add_documents(
             documents=documents,
             ids=[str(uuid.uuid4()) for _ in range(len(documents))]
         )
 
-        # 6. 上传成功后记录MD5，防止下次重复上传
+        # 7. 上传成功后记录MD5，防止下次重复上传
         self.write_md5(md5_value)
 
-        return f"文件 '{file_name}' 上传成功，共 {len(documents)} 个文档块"
+        return f"文件 '{file_name}' 上传成功，共 {len(documents)} 个文档块 + 1 条摘要"
+
+    def _generate_and_store_summary(self, documents: list[Document], file_name: str):
+        """
+        生成文档摘要并存入向量库
+
+        工作流程：
+        - 短文档（<=8000字）：直接全文生成摘要
+        - 长文档（>8000字）：分段生成局部摘要，再合并为完整摘要
+        这样不管文档多长，都能覆盖全文内容
+
+        :param documents: 原始文档块列表
+        :param file_name: 文件名，记录到 metadata 中
+        """
+        # 拼接全文
+        full_text = "\n".join(doc.page_content for doc in documents)
+
+        if len(full_text) <= 8000:
+            # 短文档：直接生成摘要
+            summary_content = llm.invoke(SUMMARY_PROMPT.format(content=full_text)).content
+        else:
+            # 长文档：分段摘要 -> 合并
+            # 按8000字分段，确保每段都能被 LLM 完整处理
+            chunks = [full_text[i:i + 8000] for i in range(0, len(full_text), 8000)]
+
+            # 每段生成局部摘要
+            partial_summaries = []
+            for i, chunk in enumerate(chunks):
+                partial = llm.invoke(
+                    f"请对以下文档的第{i + 1}部分生成摘要，包含章节标题和核心内容：\n\n{chunk}"
+                ).content
+                partial_summaries.append(partial)
+
+            # 合并所有局部摘要，生成最终完整摘要
+            merged = "\n\n".join(partial_summaries)
+            summary_content = llm.invoke(
+                f"以下是一篇文档各部分的摘要，请合并为一份完整的结构化摘要，"
+                f"包含：文档主题、完整目录结构、各章节概要。\n\n{merged}"
+            ).content
+
+        # 构建摘要 Document，metadata 标记为 summary 类型
+        summary_doc = Document(
+            page_content=summary_content,
+            metadata={"type": "summary", "source": file_name}
+        )
+
+        # 存入向量库
+        self.qdrant_store.vector_store.add_documents(
+            documents=[summary_doc],
+            ids=[str(uuid.uuid4())]
+        )
 
     def _load_pdf(self, file_bytes: bytes) -> list[Document]:
         """

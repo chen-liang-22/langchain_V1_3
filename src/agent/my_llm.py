@@ -1,6 +1,7 @@
 import os
 
 from dotenv import load_dotenv
+from langchain_community.chat_models import ChatTongyi
 from langchain_deepseek import ChatDeepSeek
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
@@ -31,3 +32,7 @@ llm_deepseek = ChatDeepSeek(
     model_name='deepseek-v4-flash',
     temperature=0.7
 )
+
+llm_tongyi = ChatTongyi(model="qwen3-max")
+
+
